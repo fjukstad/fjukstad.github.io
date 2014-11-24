@@ -1,0 +1,233 @@
+<html>
+<head>
+<!--<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>--> 
+<script src="/d3.js" charset="utf-8"></script>
+<script> 
+
+    var svg, c, movepx, tiles, cr, s, starr, player, tilesize;  
+
+    function functions(){
+        console.log("\nmoveLeft()\nmoveRight()\nmoveDown()\nmoveUp()");
+    }
+
+    function moveLeft() {
+        c.transition()
+          .attr("cx", function(d) {
+                d.oldx = d.x
+                d.x = d.oldx - movepx;
+                return d.x;
+        })
+        checkPlayerPosition() 
+    }
+    function moveUp() {
+        c.transition()
+        .attr("cy", function(d) {
+                d.oldy = d.y
+                d.y = d.oldy - movepx;
+                return d.y
+        }); 
+        checkPlayerPosition() 
+    }
+
+    function moveRight() {
+        c.transition()
+         .attr("cx", function(d) {
+                d.oldx = d.x
+                d.x = d.oldx + movepx;
+                return d.x
+        }); 
+        checkPlayerPosition() 
+    }
+    function moveDown() {
+        c.transition()
+            .attr("cy", function(d) {
+                d.oldy = d.y
+                d.y = d.oldy + movepx;
+                return d.y
+        });
+    checkPlayerPosition() 
+    }
+
+
+    function outsideBoundaries(){
+        var d = c[0][0].__data__
+        var len = tiles[0].length;
+        for(var i = 0; i < len; i++){
+            if(inside(tiles[0][i].__data__, d.x, d.y)){
+                return false
+            } 
+
+        } 
+        return true
+    }
+
+    function inside(tile, x, y){
+        if(x <= tile.x){ //left
+            return false;
+        } else if(x >= tile.x+tilesize){ //right
+            return false;
+        } else if(y > tile.y + tilesize){ // bottom
+            return false;
+        } else if(y < tile.y){ //top
+            return false;
+        }
+        return true
+    }
+
+    function onStar(){
+        var d = c[0][0].__data__; 
+        var s = star[0]
+        if(d.x > s.x - starr && d.x < s.x + starr) {
+            if(d.y > s.y - starr && d.y < s.y + starr){
+                return true
+            }
+        }
+        return false
+    }
+
+
+ function checkPlayerPosition() {
+
+        if(outsideBoundaries()){
+            c.transition()
+                .style("fill", "red")
+                .attr("r", cr*5)
+                .transition()
+                .attr("cy", function(d) {
+                    d.oldy = d.y
+                    d.y = starty
+                    return d.y
+                })
+                 .attr("cx", function(d) {
+                    d.oldx = d.x
+                    d.x = startx; 
+                    return d.x
+                })
+                 .style("fill", "steelblue")
+                .attr("r", cr)
+        }
+
+        if(onStar()){
+            s.transition()
+                .attr("r", 0);
+            c.transition()
+                .delay(500)
+                .attr("r", cr*2); 
+
+            svg.selectAll("text")
+                .data(["Good job!"])
+                .enter()
+                .append("text")
+                .attr("x", 220)
+                .attr("y", 50)
+                .attr("font-size", 60)
+                .attr("font-family", "Helvetica Neue") 
+                .attr("fill", "steelblue")
+                .text(function(d){
+                        return d;
+                });
+        }
+    }
+
+window.onload = function(){
+
+    console.log("Hello") 
+
+    var h = 250
+        w = 500
+        
+    d3.select("body").style("background-color", "#B00000") 
+
+    svg = d3.select("body").selectAll("svg"); 
+    
+    svg.attr("height", h)
+        .attr("width", w) 
+        .style("background-color", "#B00000") 
+    
+    cr = 5,
+        startx = 65,
+        starty = 65;
+
+    tilesize = 30;
+
+    tiles = [
+                {x: 50, y:50},    
+                {x: 50, y:80},
+                {x: 50, y:110}, 
+                {x: 80, y:110},    
+                {x: 110, y:110}, 
+                {x: 110, y:140},  
+                ]
+
+    tiles = svg.selectAll("rect")
+                .data(tiles)
+                .enter()
+                .append("rect")
+                .attr("height", tilesize)
+                .attr("width", tilesize)
+                .attr("x", function(d){
+                        return d.x;
+                })
+                .attr("y", function(d){
+                        return d.y;
+                })
+                .style("fill", "black") 
+                
+    player = [{size: 5, x: startx, y: starty, oldx: 0, oldy: 0}]
+    
+    c = svg.selectAll("circle")
+                .data(player)
+                .enter()
+                .append("circle") 
+                .attr("r", function(d){
+                     return d.size
+                     })
+                .attr("cx", startx)
+                .attr("cy", starty)
+                .style("fill", "steelblue");
+
+    star = [{x: 125, y:155}];
+
+    starr = 10;
+
+    s = svg.selectAll("stars")
+                .data(star)
+                .enter()
+                .append("circle")
+                .attr("r", starr)
+                .attr("cx", function(d){
+                        return d.x;
+                        })
+                .attr("cy", function(d){
+                        return d.y;
+                        })
+                .style("fill", "green"); 
+
+    movepx = tilesize
+
+   
+    
+    document.onkeydown = function(e) {
+        switch (e.keyCode) {
+            case 37:
+                moveLeft() 
+                break;
+            case 38:
+                moveUp() 
+                break;
+            case 39:
+                moveRight()
+                break;
+            case 40:
+                moveDown() 
+                break;
+        }
+    };                
+}
+</script>
+</head> 
+<body>
+<svg id="world">
+</svg> 
+</body> 
+</html> 
