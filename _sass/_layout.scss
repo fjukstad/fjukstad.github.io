@@ -188,6 +188,20 @@
     font-size: 24px;
 }
 
+.page-picture {
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
+    float: left;
+    margin-right: 0;
+}
+
+.page-text {
+    width: -webkit-calc(65% - (#{$spacing-unit} / 2));
+    width:         calc(65% - (#{$spacing-unit} / 2));
+    float:right;
+    margin-left: 1em;
+}
+
 
 
 /**

@@ -277,6 +277,18 @@ pre {
   display: block;
   font-size: 24px; }
 
+.page-picture {
+  width: -webkit-calc(35% - (30px / 2));
+  width: calc(35% - (30px / 2));
+  float: left;
+  margin-right: 0; }
+
+.page-text {
+  width: -webkit-calc(65% - (30px / 2));
+  width: calc(65% - (30px / 2));
+  float: right;
+  margin-left: 1em; }
+
 /**
  * Posts
  */
