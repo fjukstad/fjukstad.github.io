@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="page-picture">
-        <img src="{{ site.email | to_gravatar }}"/>
+        <img src="http://www.gravatar.com/avatar/76ca00cea799bc805a84698ed86e6bea?s=135"/>
 </div> 
 I'm a Ph. D. student in computer science at UiT - The Arctic University of
 Norway. I'm working on interactive systems for explorative analyses of data from
