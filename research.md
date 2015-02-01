@@ -3,7 +3,7 @@ layout: page
 title: Research
 permalink: /research/
 ---
-Here's a (hopefully) update list of my publications, talks etc. 
+Here's a (hopefully) updated list of my publications, talks etc. 
 
 ### Papers
 - **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
