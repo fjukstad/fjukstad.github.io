@@ -6,6 +6,9 @@ permalink: /research/
 Here's a (hopefully) updated list of my publications, talks etc. 
 
 ### Papers
+
+- **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
+  Bongo. [Kvik: three-tier data exploration tools for flexible analysis of genomic data in epidemiological studies](http://f1000research.com/articles/4-81/v2) in F1000Research 2015. 
 - **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
   Bongo. [Kvik: Interactive exploration of genomic data from the NOWAC
   postgenome biobank.](http://ojs.bibsys.no/index.php/NIK/article/view/11) in
