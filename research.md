@@ -44,7 +44,7 @@ Here's a (hopefully) updated list of my publications, talks etc.
 
 ### Posters 
 - **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
-  Bongo.[Interactive omics data exploration in epidemiological
+  Bongo. [Interactive omics data exploration in epidemiological
   studies](/research/nordicepi2015-poster.pdf). Nordic Meeting in Epidemiology and Registry-based Health Research. Oslo, Norway. September 2015. 
 
 ### Theses & Projects
