@@ -23,6 +23,13 @@ Here's a (hopefully) updated list of my publications, talks etc.
   Victoria, Canada.
 
 ### Talks
+- **Bjørn Fjukstad** [Processing and p5js](http://kodeklubben-tromso.github.io/laererkonferanse/workshops/processing/presentasjon/) (in norwegian). 
+    Teacher Conference in Programming, Tromsø September 2015.
+- **Bjørn Fjukstad** [Kodeklubben Tromsø](https://github.com/kodeklubben-tromso/laererkonferanse/raw/master/presentasjoner/kodeklubben-troms%C3%B8.pdf) (in norwegian).
+  Teacher Conference in Programming, Tromsø September 2015.
+- Stian Hansen and **Bjørn Fjukstad** [Introduction to coding and different
+  technologies](https://github.com/kodeklubben-tromso/laererkonferanse/raw/master/presentasjoner/teknologier.pdf) (in norwegian).
+  Teacher Conference in Programming, Tromsø September 2015.
 - **Bjørn Fjukstad**. [Data Driven Documents
   (D3).](https://github.com/fjukstad/d3-presentation) Developer lunch at IT
   Dept. at University of Tromsø. October 2014.
@@ -34,6 +41,11 @@ Here's a (hopefully) updated list of my publications, talks etc.
   Postgenome Biobank](http://bdps.cs.uit.no/papers/kvik-socbin14.pdf) (extended
   abstract). SocBiN Bioinformatics. Oslo, Norway. June 2014.
 - **Bjørn Fjukstad**. [Kvik: Interactive Exploration of multi-omics data from the NOWAC postgenome biobank.](http://bdps.cs.uit.no/papers/kvik-nowac-group-meeting-fall-2014.pdf) NOWAC postgenome group meeting. September 2014.
+
+### Posters 
+- **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
+  Bongo.[Interactive omics data exploration in epidemiological
+  studies](/research/nordicepi2015-poster.pdf). Nordic Meeting in Epidemiology and Registry-based Health Research. Oslo, Norway. September 2015. 
 
 ### Theses & Projects
 - **Bjørn Fjukstad**. [Kvik: interactive exploration of genomic data from the
