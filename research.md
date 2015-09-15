@@ -30,6 +30,8 @@ Here's a (hopefully) updated list of my publications, talks etc.
 - Stian Hansen and **Bjørn Fjukstad** [Introduction to coding and different
   technologies](https://github.com/kodeklubben-tromso/laererkonferanse/raw/master/presentasjoner/teknologier.pdf) (in norwegian).
   Teacher Conference in Programming, Tromsø September 2015.
+- **Bjørn Fjukstad** Kvik - a tool to visualize genomic data from the NOWAC post genome cohort. Department of Community Medicine seminar, University of Tromsø. March 2015.
+- **Bjørn Fjukstad** [Kvik: Interactive exploration of genomic data from the NOWAC postgenome biobank.](http://bdps.cs.uit.no/papers/kvik-cs-lunch-21-01-2015.pdf). [CS-lunch](http://lunch.cs.uit.no), Department of Computer Science, University of Tromsø. January 2015. 
 - **Bjørn Fjukstad**. [Data Driven Documents
   (D3).](https://github.com/fjukstad/d3-presentation) Developer lunch at IT
   Dept. at University of Tromsø. October 2014.
