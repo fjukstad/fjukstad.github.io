@@ -24,6 +24,8 @@ Here's a (hopefully) updated list of my publications, talks etc.
 
 ### Talks
 - **Bjørn Fjukstad** [Processing and p5js](http://kodeklubben-tromso.github.io/laererkonferanse/workshops/processing/presentasjon/) (in norwegian). 
+    Teacher Conference in Programming, Oslo November 2015.
+- **Bjørn Fjukstad** [Processing and p5js](http://kodeklubben-tromso.github.io/laererkonferanse/workshops/processing/presentasjon/) (in norwegian). 
     Teacher Conference in Programming, Tromsø September 2015.
 - **Bjørn Fjukstad** [Kodeklubben Tromsø](https://github.com/kodeklubben-tromso/laererkonferanse/raw/master/presentasjoner/kodeklubben-troms%C3%B8.pdf) (in norwegian).
   Teacher Conference in Programming, Tromsø September 2015.
