@@ -54,12 +54,13 @@ Here's a (hopefully) updated list of my publications, talks etc.
 ### Theses & Projects
 - **Bjørn Fjukstad**. [Kvik: interactive exploration of genomic data from the
   NOWAC postgenome biobank.](http://munin.uit.no/handle/10037/6382) Master
-  thesis. Dept. of Computer Science, University of Tromsø. Mai 2014.
+  thesis. Dept. of Computer Science, University of Tromsø. May 2014.
 
 - **Bjørn Fjukstad**. [NOWAC Data
   Exploration.](http://bdps.cs.uit.no/papers/capstone-bjorn.pdf) Capstone
   Project. Dep. of Computer Science, University of Tromsø. June 2013.
 
 ### People
-- **Kenneth Knudsen**. [Freia: Exploring Biological Pathways Using Unity3D]().
+- **Kenneth Knudsen**. [Freia: Exploring Biological Pathways Using Unity3D](). Master
+  thesis. Dept. of Computer Science, University of Tromsø. December 2015.
 
