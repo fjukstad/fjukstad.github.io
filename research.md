@@ -60,3 +60,6 @@ Here's a (hopefully) updated list of my publications, talks etc.
   Exploration.](http://bdps.cs.uit.no/papers/capstone-bjorn.pdf) Capstone
   Project. Dep. of Computer Science, University of Tromsø. June 2013.
 
+### People
+- **Kenneth Knudsen**. [Freia: Exploring Biological Pathways Using Unity3D]().
+
