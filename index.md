@@ -9,6 +9,7 @@ Norway. I'm working on interactive systems for explorative analyses of data from
 the Norwegian Women and Cancer (NOWAC) study. I'm a member of the [Biological
 Data Processing Lab (BDPS)](http://bdps.cs.uit.no/) in the
 [HPDS](http://hpds.cs.uit.no/) research group, and a student in the
-[EPINOR](http://site.uit.no/epinor/) research school. 
+[EPINOR](http://site.uit.no/epinor/) research school. I also organize the 
+local [code club in Tromsø](http://kodeklubben-tromso.github.io)! 
 
 
