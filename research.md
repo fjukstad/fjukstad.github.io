@@ -64,8 +64,6 @@ Here's a (hopefully) updated list of my publications, talks etc.
 ### People
 I've given advice to some students as well! 
 
-- **Kenneth Knudsen**. [Freia: Exploring Biological Pathways Using Unity3D](). Master
+- **Kenneth Knudsen**. [Freia: Exploring Biological Pathways Using Unity3D](http://munin.uit.no/handle/10037/8327). Master
   thesis. Dept. of Computer Science, University of Tromsø. December 2015.
-<!--
-- **Jason Tang**. Master thesis. Dept. of Computer Science, University of Tromsø.
---> 
+- **Jason Tang**.[A framework for building scalable web applications for high-resolution cluster-based display walls](http://munin.uit.no/handle/10037/9358) Master thesis. Dept. of Computer Science, University of Tromsø. June 2016. 
