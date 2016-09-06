@@ -62,6 +62,10 @@ Here's a (hopefully) updated list of my publications, talks etc.
   Project. Dep. of Computer Science, University of Tromsø. June 2013.
 
 ### People
+I've given advice to some students as well! 
+
 - **Kenneth Knudsen**. [Freia: Exploring Biological Pathways Using Unity3D](). Master
   thesis. Dept. of Computer Science, University of Tromsø. December 2015.
-
+<!--
+- **Jason Tang**. Master thesis. Dept. of Computer Science, University of Tromsø.
+--> 
