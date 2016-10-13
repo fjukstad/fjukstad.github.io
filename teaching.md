@@ -5,10 +5,11 @@ permalink: /teaching/
 ---
 
 I'm also doing my best to teach others! I've been TA'ing at uni and organizing
-the local Code Club in Tromsø for the last couple of years. On this page I've
-tried to list all of it below with some links to source code or other materials.
-Although I believe that everything I do at the University should be open, I was
-unfortunately not allowed to open-source everything I built for the uni courses! 
+the local [Code Club in Tromsø](kodeklubben-tromso.github.io) for the last couple
+of years. On this page I've tried to list all of it below with some links to 
+source code or other materials. Although I believe that everything I do at the 
+University should be open, I was unfortunately not allowed to open-source 
+everything I built for the uni courses! 
 
 ### Uni
 
