@@ -23,6 +23,7 @@ Here's a (hopefully) updated list of my publications, talks etc.
   Victoria, Canada.
 
 ### Talks
+- **Bjørn Fjukstad** [Building systems for interactive data exploration in systems biology](http://ec2-54-234-21-231.compute-1.amazonaws.com/talks-master/barbados-2017/mixt-barbados-01-2017.slide). Workshop on Cancer and the Immune System, Barbados January 2017.  
 - **Bjørn Fjukstad** [High-performance reproducible data exploration applications in epidemiological studies](). Workshop on Genetic Networks, Barbados January 2016.  
 - **Bjørn Fjukstad** [Processing and p5js](http://kodeklubben-tromso.github.io/laererkonferanse/workshops/processing/presentasjon/) (in norwegian). 
     Teacher Conference in Programming, Oslo November 2015.
