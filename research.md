@@ -7,6 +7,15 @@ Here's a (hopefully) updated list of my publications, talks etc.
 
 ### Papers
 
+
+- **Bjørn Fjukstad**, Vanessa Dumeaux, Karina Standahl Olsen, Michael Hallett,
+  Eiliv Lund, Lars Ailo Bongo [Building Applications For Interactive Data 
+  Exploration In Systems 
+  Biology](http://biorxiv.org/content/early/2017/05/24/141630), bioRxiv 2017.
+  Currently under submission. 
+- Inge Alexander Raknes, **Bjørn Fjukstad**, Lars Ailo Bongo [ nsroot:
+  Minimalist Process Isolation Tool Implemented With Linux
+  Namespaces](https://arxiv.org/abs/1609.03750), arXiv 2016.
 - **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
   Bongo. [Kvik: three-tier data exploration tools for flexible analysis of genomic data in epidemiological studies](http://f1000research.com/articles/4-81/v2) in F1000Research 2015. 
 - **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
@@ -23,30 +32,36 @@ Here's a (hopefully) updated list of my publications, talks etc.
   Victoria, Canada.
 
 ### Talks
-- **Bjørn Fjukstad** [Building systems for interactive data exploration in systems biology](http://bjorn.cs.uit.no/talks-master/barbados-2017/mixt-barbados-01-2017.slide). Workshop on Cancer and the Immune System, Barbados January 2017.  
-- **Bjørn Fjukstad** [High-performance reproducible data exploration applications in epidemiological studies](). Workshop on Genetic Networks, Barbados January 2016.  
-- **Bjørn Fjukstad** [Processing and p5js](http://kodeklubben-tromso.github.io/laererkonferanse/workshops/processing/presentasjon/) (in norwegian). 
+- [They Don't Teach You This In School (yet)](/research/energy-on-the-loose.pdf)
+  (in Norwegian), Energy On The Loose Conference, Tromsø, May 2017. 
+- [Personalized breast cancer treatment in practice](#), Norwegian Translational
+  Cancer Research Ceenter, Tromsø May 2017. 
+- [Low-cost Air Quality Monitoring Project in
+  High-Schools](/research/luftkvalitet-lektor2.pdf) (in Norwegian),
+  Lektor2 Regionsamling, Tromsø Mars 2017. 
+- [Building systems for interactive data exploration in systems biology](http://bjorn.cs.uit.no/talks-master/barbados-2017/mixt-barbados-01-2017.slide). Workshop on Cancer and the Immune System, Barbados January 2017.  
+- [High-performance reproducible data exploration applications in epidemiological studies](). Workshop on Genetic Networks, Barbados January 2016.  
+- [Processing and p5js](http://kodeklubben-tromso.github.io/laererkonferanse/workshops/processing/presentasjon/) (in Norwegian). 
     Teacher Conference in Programming, Oslo November 2015.
-- **Bjørn Fjukstad** [Processing and p5js](http://kodeklubben-tromso.github.io/laererkonferanse/workshops/processing/presentasjon/) (in norwegian). 
+- [Processing and p5js](http://kodeklubben-tromso.github.io/laererkonferanse/workshops/processing/presentasjon/) (in Norwegian). 
     Teacher Conference in Programming, Tromsø September 2015.
-- **Bjørn Fjukstad** [Kodeklubben Tromsø](https://github.com/kodeklubben-tromso/laererkonferanse/raw/master/presentasjoner/kodeklubben-troms%C3%B8.pdf) (in norwegian).
+- [Kodeklubben Tromsø](https://github.com/kodeklubben-tromso/laererkonferanse/raw/master/presentasjoner/kodeklubben-troms%C3%B8.pdf) (in Norwegian).
   Teacher Conference in Programming, Tromsø September 2015.
-- Stian Hansen and **Bjørn Fjukstad** [Introduction to coding and different
-  technologies](https://github.com/kodeklubben-tromso/laererkonferanse/raw/master/presentasjoner/teknologier.pdf) (in norwegian).
+- [Introduction to coding and different
+  technologies](https://github.com/kodeklubben-tromso/laererkonferanse/raw/master/presentasjoner/teknologier.pdf) (in Norwegian).
   Teacher Conference in Programming, Tromsø September 2015.
-- **Bjørn Fjukstad** Kvik - a tool to visualize genomic data from the NOWAC post genome cohort. Department of Community Medicine seminar, University of Tromsø. March 2015.
-- **Bjørn Fjukstad** [Kvik: Interactive exploration of genomic data from the NOWAC postgenome biobank.](http://bdps.cs.uit.no/papers/kvik-cs-lunch-21-01-2015.pdf). [CS-lunch](http://lunch.cs.uit.no), Department of Computer Science, University of Tromsø. January 2015. 
-- **Bjørn Fjukstad**. [Data Driven Documents
+- Kvik - a tool to visualize genomic data from the NOWAC post genome cohort. Department of Community Medicine seminar, University of Tromsø. March 2015.
+- [Kvik: Interactive exploration of genomic data from the NOWAC postgenome biobank.](http://bdps.cs.uit.no/papers/kvik-cs-lunch-21-01-2015.pdf). [CS-lunch](http://lunch.cs.uit.no), Department of Computer Science, University of Tromsø. January 2015. 
+- [Data Driven Documents
   (D3).](https://github.com/fjukstad/d3-presentation) Developer lunch at IT
   Dept. at University of Tromsø. October 2014.
-- **Bjørn Fjukstad**. [Kvik: Interactive exploration of biological
+- [Kvik: Interactive exploration of biological
   pathways.](http://bdps.cs.uit.no/papers/kvik-bio-3010-20-10-2014.pdf) BIO-3010
   Modelling in Systems Biology. University of Tromsø. October 2014.
-- **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
-  Bongo. [Kvik: Interactive Exploration of Multi-Omics Data from the NOWAC
+- [Kvik: Interactive Exploration of Multi-Omics Data from the NOWAC
   Postgenome Biobank](http://bdps.cs.uit.no/papers/kvik-socbin14.pdf) (extended
   abstract). SocBiN Bioinformatics. Oslo, Norway. June 2014.
-- **Bjørn Fjukstad**. [Kvik: Interactive Exploration of multi-omics data from the NOWAC postgenome biobank.](http://bdps.cs.uit.no/papers/kvik-nowac-group-meeting-fall-2014.pdf) NOWAC postgenome group meeting. September 2014.
+- [Kvik: Interactive Exploration of multi-omics data from the NOWAC postgenome biobank.](http://bdps.cs.uit.no/papers/kvik-nowac-group-meeting-fall-2014.pdf) NOWAC postgenome group meeting. September 2014.
 
 ### Posters 
 - **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
@@ -65,6 +80,13 @@ Here's a (hopefully) updated list of my publications, talks etc.
 ### People
 I've given advice to some students as well! 
 
-- **Kenneth Knudsen**. [Freia: Exploring Biological Pathways Using Unity3D](http://munin.uit.no/handle/10037/8327). Master
-  thesis. Dept. of Computer Science, University of Tromsø. December 2015.
-- **Jason Tang**.[A framework for building scalable web applications for high-resolution cluster-based display walls](http://munin.uit.no/handle/10037/9358) Master thesis. Dept. of Computer Science, University of Tromsø. June 2016. 
+- **Nina Angelvik**. [Low-cost portable air quality sensor kit and cloud
+  service](#) Individual Special Curriculum, Dept. of Computer Science,
+  University of Tromsø, December 2016. 
+- **Jason Tang**.[A framework for building scalable web applications for
+  high-resolution cluster-based display
+  walls](http://munin.uit.no/handle/10037/9358) Master thesis. Dept. of Computer
+  Science, University of Tromsø. June 2016. 
+- **Kenneth Knudsen**. [Freia: Exploring Biological Pathways Using
+  Unity3D](http://munin.uit.no/handle/10037/8327). Master thesis. Dept. of
+  Computer Science, University of Tromsø. December 2015.

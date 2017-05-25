@@ -13,10 +13,11 @@ everything I built for the uni courses!
 
 ### Uni
 
-- [School lab @ UiT](https://github.com/skolelab/nettsider) creating web sites
-  from scratch using HTML and CSS.
-- [School lab @ UiT](https://github.com/skolelab/arduino) introduction to
-  Arduinos and electronics. 
+- [Introduction to coding with the BBC Micro:bit](), School Laboratory @ UiT. 
+- [Creating web sites from scratch using HTML and
+  CSS.](https://github.com/skolelab/nettsider), School Laboratory @ UiT. 
+- [Introduction to Arduinos and electronics.
+  ](https://github.com/skolelab/arduino), School Laboratory @ UiT. 
 - [Spring 2015, INF-3203 Advanced Distributed Systems](https://github.com/uit-inf-3203). 
 - [Fall 2014, INF-3200 Distributed Systems](https://github.com/uit-inf-3200),
   [teaching material](https://github.com/fjukstad/inf-3200-2014).
