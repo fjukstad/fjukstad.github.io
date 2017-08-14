@@ -39,7 +39,7 @@ Here's a (hopefully) updated list of my publications, talks etc.
 - [Low-cost Air Quality Monitoring Project in
   High-Schools](/research/luftkvalitet-lektor2.pdf) (in Norwegian),
   Lektor2 Regionsamling, Tromsø March 2017. 
-- [Building systems for interactive data exploration in systems biology](http://bjorn.cs.uit.no/talks-master/barbados-2017/mixt-barbados-01-2017.slide). Workshop on Cancer and the Immune System, Barbados January 2017.  
+- [Building systems for interactive data exploration in systems biology](/talks/barbados-2017/mixt-barbados-01-2017.html). Workshop on Cancer and the Immune System, Barbados January 2017.  
 - [High-performance reproducible data exploration applications in epidemiological studies](). Workshop on Genetic Networks, Barbados January 2016.  
 - [Processing and p5js](http://kodeklubben-tromso.github.io/laererkonferanse/workshops/processing/presentasjon/) (in Norwegian). 
     Teacher Conference in Programming, Oslo November 2015.
