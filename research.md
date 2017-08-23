@@ -11,8 +11,8 @@ Here's a (hopefully) updated list of my publications, talks etc.
 - **Bjørn Fjukstad**, Vanessa Dumeaux, Karina Standahl Olsen, Michael Hallett,
   Eiliv Lund, Lars Ailo Bongo [Building Applications For Interactive Data 
   Exploration In Systems 
-  Biology](http://biorxiv.org/content/early/2017/05/24/141630), bioRxiv 2017.
-  Currently under submission. 
+  Biology](http://biorxiv.org/content/early/2017/05/24/141630), ([bioRxiv](http://biorxiv.org/content/early/2017/05/24/141630)).
+  The 8th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics (ACM BCB) 2017.
 - Inge Alexander Raknes, **Bjørn Fjukstad**, Lars Ailo Bongo [ nsroot:
   Minimalist Process Isolation Tool Implemented With Linux
   Namespaces](https://arxiv.org/abs/1609.03750), arXiv 2016.
@@ -32,6 +32,10 @@ Here's a (hopefully) updated list of my publications, talks etc.
   Victoria, Canada.
 
 ### Talks
+- [Building Systems for Interactive Data Exploration in Systems
+  Biology](/talks/acm-bcb-boston-2017/kvik-mixt-microservices.html). The 8th ACM
+  Conference on Bioinformatics, Computational Biology, and Health Informatics
+  (ACM BCB), Boston, August 2017.
 - [They Don't Teach You This In School (yet)](/research/energy-on-the-loose.pdf)
   (in Norwegian), Energy On The Loose Conference, Tromsø, May 2017. 
 - [Personalized breast cancer treatment in practice](#), Norwegian Translational

@@ -1,0 +1,575 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Building Systems for Interactive Data Exploration in Systems Biology </title>
+    <meta charset='utf-8'>
+    <script>
+      var notesEnabled =  false ;
+    </script>
+    <script src='/static/slides.js'></script>
+  </head>
+
+  
+
+  <body style='display: none'>
+
+    <section class='slides layout-widescreen'>
+      
+      <article class="first">
+      <div style="width: 100%; height: 65%" class="front-logo">   
+        <h1>Building Systems for Interactive Data Exploration in Systems Biology </h1>
+        
+        
+        
+          <div class="presenter">
+            
+  
+  <p>
+    <b>Bjørn</b> <b>Fjukstad</b> 
+  </p>
+  
+
+  
+  <p>
+    Ph.D. Student
+  </p>
+  
+
+  
+  <p>
+    Department of Computer Science
+  </p>
+  
+
+          </div>
+        
+          <div class="presenter">
+            
+  
+  <p>
+    
+  </p>
+  
+
+          </div>
+        
+        </div>
+      </article>
+      
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>Me </h3>
+        
+  <ul>
+  
+    <li>Phd student in Computer Science at the University of Tromsø</li>
+  
+    <li>Building systems for interactive exploration and analysis of omics data </li>
+  
+    <li>Reproducible containerized genomics pipelines </li>
+  
+  </ul>
+
+<div class="image">
+  <img src="img/arctic-circle.png" height="400">
+</div>
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>Tromsø</h3>
+        
+<div class="image">
+  <img src="img/skyrace.jpg" height="520">
+</div>
+<figcaption>Photo: <a href="facebook.com/tromsoskyrace" target="_self">facebook.com/tromsoskyrace</a></figcaption>
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3></h3>
+        
+<div class="image">
+  <img src="img/mixt-screenshot.png" height="520">
+</div>
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>Overview</h3>
+        
+  <ul>
+  
+    <li>Background</li>
+  
+    <li>Microservices</li>
+  
+    <li>Use case: <a href="http://github.com/fjukstad/mixt" target="_blank">MIxT</a></li>
+  
+    <li>Live demo! </li>
+  
+    <li>Wrap-up and questions. </li>
+  
+  </ul>
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>On the shoulders of giants </h3>
+        
+  <ul>
+  
+    <li>Significant increase in rate of data generation creates a need for interactive tools to explore the resultant datasets</li>
+  
+  </ul>
+
+  
+  <p>
+    Tools and databases
+  </p>
+  
+
+  <ul>
+  
+    <li>Analysis frameworks: <a href="http://r-project.org" target="_blank">R</a>, <a href="http://bioconductor.org" target="_blank">Bioconductor</a>, <a href="https://galaxyproject.org/" target="_blank">Galaxy</a>, <a href="https://github.com/biogo/biogo" target="_blank">biogo</a>, <a href="http://biopython.org/" target="_blank">Biopython</a></li>
+  
+    <li>Visualization: <a href="http://cytoscape.org" target="_blank">Cytoscape</a>, <a href="http://biojs.net" target="_blank">BioJS</a>, <a href="http://d3js.org" target="_blank">D3</a></li>
+  
+    <li>Databases: <a href="http://software.broadinstitute.org/gsea/msigdb" target="_blank">MSiGDB</a>, <a href="http://www.kegg.jp/" target="_blank">KEGG</a>, <a href="http://www.genecards.org/" target="_blank">GeneCards</a>, <a href="https://www.ncbi.nlm.nih.gov/pubmed/" target="_blank">PubMed</a></li>
+  
+  </ul>
+
+  
+  <p>
+    There are few systems that bring these together 
+  </p>
+  
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>Microservices</h3>
+        
+  <ul>
+  
+    <li>Structure an application into small reusable, loosely coupled parts</li>
+  
+    <li>Communicate using language-agnostic protocols: HTTP</li>
+  
+    <li>Package them in software containers, <a href="http://docker.com" target="_blank">Docker</a> or <a href="http://coreos.com/rkt" target="_blank">rkt</a>. </li>
+  
+    <li>Examples: <a href="http://biocontainers.pro" target="_blank">BioContainers</a></li>
+  
+  </ul>
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>Data-centric applications</h3>
+        
+  
+  <p>
+    From our experience we identified a set of central features
+  </p>
+  
+
+  <ul>
+  
+    <li>Low-latency language-independent to integrate statistical software such as R</li>
+  
+    <li>Interface with online reference databases</li>
+  
+    <li>Simple sharing and deployment of components</li>
+  
+  </ul>
+
+<div class="image">
+  <img src="img/mixt-screenshot.png" height="320">
+</div>
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>Design Principles</h3>
+        
+  <ul>
+  
+    <li>Build applications as collections of language-agnostic microservices. </li>
+  
+    <li>Package components using software containers</li>
+  
+  </ul>
+
+<div class="image">
+  <img src="img/mixt-screenshot.png" height="320">
+</div>
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>MIxT </h3>
+        
+  <ul>
+  
+    <li>Interactive web application for exploring and comparing transcriptional profiles from blood and tumor samples. </li>
+  
+    <li>Integrate results with known genesets and online databases.</li>
+  
+    <li>Both a web application and an R package! </li>
+  
+    <li>Online at <a href="http://mixt-blood-tumor.bci.mcgill.ca" target="_blank">mixt-blood-tumor.bci.mcgill.ca</a> and code at <a href="http://github.com/fjukstad/mixt" target="_blank">github.com/fjukstad/mixt</a></li>
+  
+  </ul>
+
+<div class="image">
+  <img src="img/mixt-screenshot.png" height="320">
+</div>
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>MIxT Architecture</h3>
+        
+<div class="image">
+  <img src="img/architecture.png" height="520">
+</div>
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>Compute Service</h3>
+        
+  <ul>
+  
+    <li>Interface with the R programming language </li>
+  
+  </ul>
+
+  
+  <p>
+    In R: 
+  </p>
+  
+
+  
+  <div class="code"><pre>&gt; rnorm(n=10) 
+[1] -0.28246693  0.39932946 -0.79904884 -0.54889158 -0.21919533 -0.06129851
+[7]  0.72666376 -1.21701196 -0.63236475  0.19391537</pre></div>
+  
+
+  
+  <p>
+    Using the command line: 
+  </p>
+  
+
+  
+  <div class="code"><pre>$ curl -d &#39;{&#34;Package&#34;:&#34;stats&#34;, &#34;Function&#34;:&#34;rnorm&#34;, &#34;Arguments&#34;:&#34;n=10&#34;}&#39;  http://server/rpc/json     
+
+[-0.8021,-0.6228,-2.1942,-0.1338,-0.0878,-0.2599,-0.2014,-0.7508,1.3789,2.0929]</pre></div>
+  
+
+  <ul>
+  
+    <li>Supports three operations: Call, Get and RPC. </li>
+  
+    <li>Concurrent by design </li>
+  
+    <li>Alternatives: <a href="http://opencpu.org" target="_blank">OpenCPU</a>, <a href="http://shiny.rstudio.com" target="_blank">Shiny</a>, <a href="http://renjin.org" target="_blank">Renjin</a></li>
+  
+  </ul>
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>Data and analysis</h3>
+        
+  
+  <p>
+    We built an R package, mixtApp: <a href="https://github.com/vdumeaux/mixtApp" target="_blank">https://github.com/vdumeaux/mixtApp</a>
+  </p>
+  
+
+  
+  <div class="code"><pre>mixtApp::getModules(tissue=&#34;blood&#34;)</pre></div>
+  
+
+  
+  <p>
+    With Kvik we can use it to get data and run analyses
+  </p>
+  
+
+  
+  <div class="code"><pre>$ curl -d &#39;{&#34;Package&#34;:&#34;mixtApp&#34;, &#34;Function&#34;:&#34;getModules&#34;, &#34;Arguments&#34;:&#34;tissue=&#39;blood&#39;&#34;}&#39;
+    http://server/rpc/
+    
+[&#34;black&#34;,&#34;blue&#34;,&#34;brown&#34;,&#34;cyan&#34;,&#34;darkgreen&#34;,&#34;darkgrey&#34;,&#34;darkred&#34;,&#34;darkturquoise&#34;,&#34;green&#34;,
+&#34;greenyellow&#34;,&#34;grey60&#34;,&#34;lightyellow&#34;,&#34;magenta&#34;,&#34;midnightblue&#34;,&#34;pink&#34;,&#34;purple&#34;,&#34;saddlebrown&#34;,
+&#34;salmon&#34;,&#34;tan&#34;,&#34;turquoise&#34;,&#34;violet&#34;,&#34;white&#34;,&#34;yellow&#34;]</pre></div>
+  
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>Database Service </h3>
+        
+  <ul>
+  
+    <li>Interface with online databases</li>
+  
+    <li>Provide low latency, decrease load on external databases, store additional metadata</li>
+  
+    <li>E-utilities, MSigDB, HGNC, and KEGG.</li>
+  
+  </ul>
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h2>Live Demo!</h2>
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>Microservices</h3>
+        
+  <ul>
+  
+    <li>Suitable for applications with coputational or storage requirements</li>
+  
+    <li>Alternative: Monolithic application built with libraries </li>
+  
+    <li>Easy sharing, simple deployment, reuse </li>
+  
+  </ul>
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>Future Work</h3>
+        
+  <ul>
+  
+    <li>Optimize the underlying R package </li>
+  
+    <li>Capture data provenance from databases </li>
+  
+    <li>Security concerns in the compute service </li>
+  
+    <li>Further investivate the performance</li>
+  
+  </ul>
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>Conclusion </h3>
+        
+  <ul>
+  
+    <li>We have show a approach for building data centric bioinformatics applications </li>
+  
+    <li>Successfully applied it to the MIxT project. </li>
+  
+    <li>MIxT is online at <a href="http://mixt-blood-tumor.bci.mcgill.ca" target="_blank">mixt-blood-tumor.bci.mcgill.ca</a>. </li>
+  
+    <li>You&#39;ll find all the code at <a href="https://github.com/fjukstad/mixt" target="_blank">github.com/fjukstad/mixt</a>.</li>
+  
+  </ul>
+
+      
+        </div>
+      </article>
+  
+  
+  
+      <article class="text">
+      <div style="width: 100%; height: 100%" class="second-logo" >
+      
+        <h3>Thanks</h3>
+        
+  <ul>
+  
+    <li>BDPS group at UiT: Lars Ailo Bongo, Eiliv Lund, Karina Standahl Olsen, Einar Holsbø</li>
+  
+    <li>Michael Hallett Lab at Concordia: Michael Hallett, Vanessa Dumeaux </li>
+  
+  </ul>
+
+      
+        </div>
+      </article>
+  
+  
+        
+      <article class="last">
+      <div style="width: 100%; height: 65%" class="front-logo" >      
+
+
+        <h1>Building Systems for Interactive Data Exploration in Systems Biology </h1>
+        
+          <div class="presenter">
+            
+                
+  
+  <p>
+    <b>Bjørn</b> <b>Fjukstad</b> 
+  </p>
+  
+
+            
+                
+  
+  <p>
+    Ph.D. Student
+  </p>
+  
+
+            
+                
+  
+  <p>
+    Department of Computer Science
+  </p>
+  
+
+            
+                <p class="link"><a href="#ZgotmplZ" target="_blank"><a href="mailto:bjorn.fjukstad@uit.no" target="_blank">bjorn.fjukstad@uit.no</a></a></p>
+            
+                <p class="link"><a href="#ZgotmplZ" target="_blank"><a href="http://twitter.com/fjukstad" target="_blank">@fjukstad</a></a></p>
+            
+                <p class="link"><a href="#ZgotmplZ" target="_blank"><a href="http://mixt-blood-tumor.bci.mcgill.ca" target="_blank">mixt-blood-tumor.bci.mcgill.ca</a>, <a href="http://github.com/fjukstad/mixt" target="_blank">github.com/fjukstad/mixt</a></a></p>
+            
+                
+  
+  <p>
+    <i>23.</i> <i>August</i> <i>2017</i> 
+  </p>
+  
+
+            
+          </div>
+        
+          <div class="presenter">
+            
+                
+  
+  <p>
+    
+  </p>
+  
+
+            
+          </div>
+        
+      </article>
+
+    <div id="help">
+      Use the left and right arrow keys or click the left and right
+      edges of the page to navigate between slides.<br>
+      (Press 'H' or navigate to hide this message.)
+    </div>
+      
+  
+
+  </body>
+</html>
