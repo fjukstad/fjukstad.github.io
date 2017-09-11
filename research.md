@@ -11,7 +11,7 @@ Here's a (hopefully) updated list of my publications, talks etc.
 - **Bjørn Fjukstad**, Vanessa Dumeaux, Karina Standahl Olsen, Michael Hallett,
   Eiliv Lund, Lars Ailo Bongo [Building Applications For Interactive Data 
   Exploration In Systems 
-  Biology](http://biorxiv.org/content/early/2017/05/24/141630), ([bioRxiv](http://biorxiv.org/content/early/2017/05/24/141630)).
+  Biology](http://dl.acm.org/citation.cfm?id=3107481), ([bioRxiv](http://biorxiv.org/content/early/2017/05/24/141630)).
   The 8th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics (ACM BCB) 2017.
 - Inge Alexander Raknes, **Bjørn Fjukstad**, Lars Ailo Bongo [ nsroot:
   Minimalist Process Isolation Tool Implemented With Linux
