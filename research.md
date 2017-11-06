@@ -6,8 +6,18 @@ permalink: /research/
 Here's a (hopefully) updated list of my publications, talks etc. 
 
 ### Papers
-
-
+- Inge Alexander Raknes, **Bjørn Fjukstad**, Lars Ailo Bongo [nsroot: Minimalist
+  Process Isolation Tool Implemented With Linux Namespaces](). To appear in Proc.
+  of NIK 2017. November 2017, Oslo, Norway.
+- **Bjørn Fjukstad** and Lars Ailo Bongo [A Review of Scalable Bioinformatics
+  Pipelines](https://link.springer.com/article/10.1007/s41019-017-0047-z). 
+  Data Science and Engineering 2017. 
+- Vanessa Dumeaux, **Bjørn Fjukstad**, Hans E Fjosne, Jan-Ole Frantzen, Marit
+  Muri Holmen, Enno Rodegerdts, Ellen Schlichting, Anne-Lise Børresen-Dale, Lars
+  Ailo Bongo, Eiliv Lund, Michael Hallett. [Interactions between the tumor and
+  the blood systemic response of breast cancer
+  patients](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005680).
+  PLoS Computational Biology 2017. 
 - **Bjørn Fjukstad**, Vanessa Dumeaux, Karina Standahl Olsen, Michael Hallett,
   Eiliv Lund, Lars Ailo Bongo [Building Applications For Interactive Data 
   Exploration In Systems 
