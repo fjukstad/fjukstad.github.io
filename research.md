@@ -78,6 +78,7 @@ Here's a (hopefully) updated list of my publications, talks etc.
 - [Kvik: Interactive Exploration of multi-omics data from the NOWAC postgenome biobank.](http://bdps.cs.uit.no/papers/kvik-nowac-group-meeting-fall-2014.pdf) NOWAC postgenome group meeting. September 2014.
 
 ### Posters 
+- **Bjørn Fjukstad**, Vanessa Dumeaux, Michael Hallett, Lars Ailo Bongo. [Reproducible Data Analysis in Precision Medicine](/research/oslo-cancer-2017-poster.pdf).  The 6th Norwegian Cancer Symposium. Oslo, Norway. December 2017.
 - **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
   Bongo. [Interactive omics data exploration in epidemiological
   studies](/research/nordicepi2015-poster.pdf). Nordic Meeting in Epidemiology and Registry-based Health Research. Oslo, Norway. September 2015. 
