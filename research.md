@@ -6,6 +6,11 @@ permalink: /research/
 Here's a (hopefully) updated list of my publications, talks etc. 
 
 ### Papers
+- **Bjørn Fjukstad**, Nina Angelvik, Maria Wulff Hauglann, Joachim Sveia 
+    Knutsen, Morten Grønnesby, Hedinn Gunhildrud, and Lars Ailo Bongo. 
+    [Low-Cost Programmable Air Quality Sensor Kits in Science Education](). To appear in Proc of 
+    The 49th ACM Technical Symposium on Computer Science Education
+    February 21 – 24, 2018, Baltimore, Maryland, USA.
 - Inge Alexander Raknes, **Bjørn Fjukstad**, Lars Ailo Bongo [nsroot: Minimalist
   Process Isolation Tool Implemented With Linux Namespaces](). To appear in Proc.
   of NIK 2017. November 2017, Oslo, Norway.
