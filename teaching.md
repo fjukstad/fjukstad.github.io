@@ -4,15 +4,19 @@ title: Teaching
 permalink: /teaching/
 ---
 
-I'm also doing my best to teach others! I've been TA'ing at uni and organizing
-the local [Code Club in Tromsø](http://kodeklubben-tromso.github.io) for the last couple
-of years. On this page I've tried to list all of it below with some links to 
-source code or other materials. Although I believe that everything I do at the 
-University should be open, I was unfortunately not allowed to open-source 
-everything I built for the uni courses! 
+I'm also doing my best to teach others! I've been teaching at university and
+organizing the local [Code Club in Tromsø](http://kodeklubben-tromso.github.io)
+for the last couple of years. On this page I've tried to list all of it below
+with some links to source code or other materials. Although I believe that
+everything I do at the University should be open, I was unfortunately not
+allowed to open-source everything I built for the uni courses! 
 
-### Uni
+### Teaching and Projects at UiT
 
+- [air:bit](http://airbit.uit.no) Project Leader. More
+  than 10 schools in Northern Norway build and code air quality sensor kits
+  (air:bits) designed at the School Laboratory. Using their air:bits they
+  collect air pollution data from Norway. School Laboratory @ UiT.
 - [Introduction to coding with the BBC Micro:bit](), School Laboratory @ UiT. 
 - [Creating web sites from scratch using HTML and
   CSS.](https://github.com/skolelab/nettsider), School Laboratory @ UiT. 
