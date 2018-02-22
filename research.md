@@ -8,7 +8,8 @@ Here's a (hopefully) updated list of my publications, talks etc.
 ### Papers
 - **Bjørn Fjukstad**, Nina Angelvik, Maria Wulff Hauglann, Joachim Sveia 
     Knutsen, Morten Grønnesby, Hedinn Gunhildrud, and Lars Ailo Bongo. 
-    [Low-Cost Programmable Air Quality Sensor Kits in Science Education](). To appear in Proc of 
+    [Low-Cost Programmable Air Quality Sensor Kits in Science
+    Education](http://dl.acm.org/citation.cfm?id=3159569). Proc of 
     The 49th ACM Technical Symposium on Computer Science Education
     February 21 – 24, 2018, Baltimore, Maryland, USA.
 - Inge Alexander Raknes, **Bjørn Fjukstad**, Lars Ailo Bongo [nsroot: Minimalist
@@ -47,6 +48,10 @@ Here's a (hopefully) updated list of my publications, talks etc.
   Victoria, Canada.
 
 ### Talks
+-  [Low-Cost Programmable Air Quality Sensor Kits in Science
+    Education](/research/air-quality-sigcse-presentation.pdf).
+    The 49th ACM Technical Symposium on Computer Science Education
+    February 21 – 24, 2018, Baltimore, Maryland, USA.
 - [Building Systems for Interactive Data Exploration in Systems
   Biology](/talks/acm-bcb-boston-2017/kvik-mixt-microservices.html). The 8th ACM
   Conference on Bioinformatics, Computational Biology, and Health Informatics
