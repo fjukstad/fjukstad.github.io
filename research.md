@@ -6,12 +6,20 @@ permalink: /research/
 Here's a (hopefully) updated list of my publications, talks etc. 
 
 ### Papers
+
+- Yury Kiselev, Sigve Andersen, Charles Johannessen, **Bjørn Fjukstad**, 
+  Karina Standahl Olsen, Helge Stenvold, Samer Al-Saad, Tom
+  Dønnem, Elin Richardsen, Roy M Bremnes, and Lill-Tove Rasmussen Busund. 
+  [Transcription factor PAX6 as a novel prognostic factor and putative tumour
+  suppressor in non-small cell lung
+  cancer](https://www.nature.com/articles/s41598-018-23417-z)
+  Scientific Reports 2018. 
 - **Bjørn Fjukstad**, Nina Angelvik, Maria Wulff Hauglann, Joachim Sveia 
-    Knutsen, Morten Grønnesby, Hedinn Gunhildrud, and Lars Ailo Bongo. 
-    [Low-Cost Programmable Air Quality Sensor Kits in Science
-    Education](http://dl.acm.org/citation.cfm?id=3159569). Proc of 
-    The 49th ACM Technical Symposium on Computer Science Education
-    February 21 – 24, 2018, Baltimore, Maryland, USA.
+  Knutsen, Morten Grønnesby, Hedinn Gunhildrud, and Lars Ailo Bongo. 
+  [Low-Cost Programmable Air Quality Sensor Kits in Science
+  Education](http://dl.acm.org/citation.cfm?id=3159569). Proc of 
+  The 49th ACM Technical Symposium on Computer Science Education
+  February 21 – 24, 2018, Baltimore, Maryland, USA.
 - Inge Alexander Raknes, **Bjørn Fjukstad**, Lars Ailo Bongo [nsroot: Minimalist
   Process Isolation Tool Implemented With Linux Namespaces](). To appear in Proc.
   of NIK 2017. November 2017, Oslo, Norway.
