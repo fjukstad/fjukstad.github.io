@@ -56,6 +56,10 @@ Here's a (hopefully) updated list of my publications, talks etc.
   Victoria, Canada.
 
 ### Talks
+- [Toward Reproducible Analysis and Exploration of High-Throughput Biological Datasets](/research/thesis-presentation.pdf).
+  Doctoral thesis presentation. 21 January 2019. Tromsø, Norway. 
+- [Why it’s hard to reproduce results in software](/research/why-its-hard-to-reproduce-results-in-software.pdf). 
+  Trial lecture. 21 January 2019. Tromsø, Norway. 
 -  [Low-Cost Programmable Air Quality Sensor Kits in Science
     Education](/research/air-quality-sigcse-presentation.pdf).
     The 49th ACM Technical Symposium on Computer Science Education
