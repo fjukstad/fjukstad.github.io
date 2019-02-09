@@ -1,8 +1,8 @@
 # Site settings
 title: Bjørn Fjukstad
-email: bjorn.fjukstad@uit.no
+email: bjornfjukstad@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-   Ph. D. student in computer science at UiT - The Arctic University of Norway. 
+  Software developer at DIPS AS
   # working on interactive systems for exploring data from the Norwegian Women and Cancer (NOWAC) study. 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://fjukstad.github.io" # the base hostname & protocol for your site
