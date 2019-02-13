@@ -6,59 +6,62 @@ permalink: /research/
 Here's a (hopefully) updated list of my publications, talks etc. 
 
 ### Papers
-- **Bjørn Fjukstad**, Vanessa Dumeaux, Michael Hallett,  Lars Ailo Bongo.
+- 
  [Reproducible Data Analysis Pipelines for Precision Medicine](https://www.biorxiv.org/content/10.1101/354811v1).
+ **Bjørn Fjukstad**, Vanessa Dumeaux, Michael Hallett,  Lars Ailo Bongo.
  To appear in the proceedings of 2019 27th Euromicro International Conference On
  Parallel, Distributed and Network-based Processing (PDP). 2019.
-- **Bjørn Fjukstad**, Nina Angelvik, Morten Grønnesby, Maria Wulff Hauglann,
-  Hedinn Gunhildrud, Fredrik Høisæther Rasch, Julianne Iversen, Margaret
-  Dalseng, Lars Ailo Bongo. [Teaching Electronics and Programming in Norwegian Schools Using the air:bit Sensor Kit](https://arxiv.org/abs/1901.05240). Arxiv, 2019. 
-- Yury Kiselev, Sigve Andersen, Charles Johannessen, **Bjørn Fjukstad**, 
-  Karina Standahl Olsen, Helge Stenvold, Samer Al-Saad, Tom
-  Dønnem, Elin Richardsen, Roy M Bremnes, and Lill-Tove Rasmussen Busund. 
-  [Transcription factor PAX6 as a novel prognostic factor and putative tumour
+-  [Teaching Electronics and Programming in Norwegian Schools Using the air:bit Sensor Kit](https://arxiv.org/abs/1901.05240).
+   **Bjørn Fjukstad**, Nina Angelvik, Morten Grønnesby, Maria Wulff Hauglann,
+   Hedinn Gunhildrud, Fredrik Høisæther Rasch, Julianne Iversen, Margaret Dalseng,
+   Lars Ailo Bongo. Arxiv, 2019. 
+-  [Transcription factor PAX6 as a novel prognostic factor and putative tumour
   suppressor in non-small cell lung
   cancer](https://www.nature.com/articles/s41598-018-23417-z).
+  Yury Kiselev, Sigve Andersen, Charles Johannessen, **Bjørn Fjukstad**, 
+  Karina Standahl Olsen, Helge Stenvold, Samer Al-Saad, Tom
+  Dønnem, Elin Richardsen, Roy M Bremnes, and Lill-Tove Rasmussen Busund.
   Scientific Reports 2018. 
-- **Bjørn Fjukstad**, Nina Angelvik, Maria Wulff Hauglann, Joachim Sveia 
-  Knutsen, Morten Grønnesby, Hedinn Gunhildrud, and Lars Ailo Bongo. 
-  [Low-Cost Programmable Air Quality Sensor Kits in Science
-  Education](http://dl.acm.org/citation.cfm?id=3159569). Proc of 
+- [Low-Cost Programmable Air Quality Sensor Kits in Science
+  Education](http://dl.acm.org/citation.cfm?id=3159569). 
+   **Bjørn Fjukstad**, Nina Angelvik, Maria Wulff Hauglann, Joachim Sveia 
+  Knutsen, Morten Grønnesby, Hedinn Gunhildrud, and Lars Ailo Bongo.
+  Proc of 
   The 49th ACM Technical Symposium on Computer Science Education
   February 21 – 24, 2018, Baltimore, Maryland, USA.
-- Inge Alexander Raknes, **Bjørn Fjukstad**, Lars Ailo Bongo [nsroot: Minimalist
-  Process Isolation Tool Implemented With Linux Namespaces](). To appear in Proc.
-  of NIK 2017. November 2017, Oslo, Norway.
-- **Bjørn Fjukstad** and Lars Ailo Bongo [A Review of Scalable Bioinformatics
-  Pipelines](https://link.springer.com/article/10.1007/s41019-017-0047-z). 
-  Data Science and Engineering 2017. 
-- Vanessa Dumeaux, **Bjørn Fjukstad**, Hans E Fjosne, Jan-Ole Frantzen, Marit
-  Muri Holmen, Enno Rodegerdts, Ellen Schlichting, Anne-Lise Børresen-Dale, Lars
-  Ailo Bongo, Eiliv Lund, Michael Hallett. [Interactions between the tumor and
+- [nsroot: Minimalist
+  Process Isolation Tool Implemented With Linux Namespaces](https://arxiv.org/abs/1609.03750)
+  .Inge Alexander
+  Raknes, **Bjørn Fjukstad**, Lars Ailo Bongo To appear in Proc.  of NIK 2017.
+  November 2017, Oslo, Norway.
+- [A Review of Scalable Bioinformatics
+  Pipelines](https://link.springer.com/article/10.1007/s41019-017-0047-z).
+  **Bjørn Fjukstad** and Lars Ailo Bongo. Data Science and Engineering 2017. 
+- [Interactions between the tumor and
   the blood systemic response of breast cancer
-  patients](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005680).
-  PLoS Computational Biology 2017. 
+  patients](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005680). 
+  Vanessa Dumeaux, **Bjørn Fjukstad**, Hans E Fjosne, Jan-Ole Frantzen, Marit
+  Muri Holmen, Enno Rodegerdts, Ellen Schlichting, Anne-Lise Børresen-Dale, Lars
+  Ailo Bongo, Eiliv Lund, Michael Hallett.  PLoS Computational Biology 2017. 
 - **Bjørn Fjukstad**, Vanessa Dumeaux, Karina Standahl Olsen, Michael Hallett,
   Eiliv Lund, Lars Ailo Bongo [Building Applications For Interactive Data 
   Exploration In Systems 
   Biology](http://dl.acm.org/citation.cfm?id=3107481), ([bioRxiv](http://biorxiv.org/content/early/2017/05/24/141630)).
   The 8th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics (ACM BCB) 2017.
-- Inge Alexander Raknes, **Bjørn Fjukstad**, Lars Ailo Bongo [ nsroot:
-  Minimalist Process Isolation Tool Implemented With Linux
-  Namespaces](https://arxiv.org/abs/1609.03750), arXiv 2016.
-- **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
-  Bongo. [Kvik: three-tier data exploration tools for flexible analysis of genomic data in epidemiological studies](http://f1000research.com/articles/4-81/v2) in F1000Research 2015. 
-- **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
-  Bongo. [Kvik: Interactive exploration of genomic data from the NOWAC
-  postgenome biobank.](http://ojs.bibsys.no/index.php/NIK/article/view/11) in
-  Proc. of NIK 2014. November 2014, Fredrikstad, Norway.
-- Giacomo Tartari, Lars Tiede, Einar Jakobsen Holsbø, Kenneth Knudsen, Inge
-  Alexander Raknes, **Bjørn Fjukstad**, Nicolle Mode, John Markus Bjørndalen,
-  Eiliv Lund, Lars Ailo Bongo. [Mr. Clean: a tool for tracking and comparing the
+- [Kvik: three-tier data exploration tools for flexible analysis of genomic data in epidemiological studies](http://f1000research.com/articles/4-81/v2)
+    **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
+    Bongo. F1000Research 2015. 
+- [Kvik: Interactive exploration of genomic data from the NOWAC
+  postgenome biobank.](http://ojs.bibsys.no/index.php/NIK/article/view/11).
+  **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
+  Bongo.  Proc. of NIK 2014. November 2014, Fredrikstad, Norway.
+- [Mr. Clean: a tool for tracking and comparing the
   lineage of scientific visualization
-  code.](http://bdps.cs.uit.no/papers/vissoft14.pdf) in Proc. of 2nd IEEE
-  Working Conference on Software Visualization (VISSOFT 2014). September 2014,
-  Victoria, Canada.
+  code.](http://bdps.cs.uit.no/papers/vissoft14.pdf) 
+  Giacomo Tartari, Lars Tiede, Einar Jakobsen Holsbø, Kenneth Knudsen, Inge
+  Alexander Raknes, **Bjørn Fjukstad**, Nicolle Mode, John Markus Bjørndalen,
+  Eiliv Lund, Lars Ailo Bongo. Proc. of 2nd IEEE Working Conference on Software
+  Visualization (VISSOFT 2014). September 2014, Victoria, Canada.
 
 ### Talks
 - [Toward Reproducible Analysis and Exploration of High-Throughput Biological Datasets](/research/thesis-presentation.pdf).
