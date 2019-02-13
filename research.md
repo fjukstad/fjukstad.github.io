@@ -6,13 +6,19 @@ permalink: /research/
 Here's a (hopefully) updated list of my publications, talks etc. 
 
 ### Papers
-
+- **Bjørn Fjukstad**, Vanessa Dumeaux, Michael Hallett,  Lars Ailo Bongo.
+ [Reproducible Data Analysis Pipelines for Precision Medicine](https://www.biorxiv.org/content/10.1101/354811v1).
+ To appear in the proceedings of 2019 27th Euromicro International Conference On
+ Parallel, Distributed and Network-based Processing (PDP). 2019.
+- **Bjørn Fjukstad**, Nina Angelvik, Morten Grønnesby, Maria Wulff Hauglann,
+  Hedinn Gunhildrud, Fredrik Høisæther Rasch, Julianne Iversen, Margaret
+  Dalseng, Lars Ailo Bongo. [Teaching Electronics and Programming in Norwegian Schools Using the air:bit Sensor Kit](https://arxiv.org/abs/1901.05240). Arxiv, 2019. 
 - Yury Kiselev, Sigve Andersen, Charles Johannessen, **Bjørn Fjukstad**, 
   Karina Standahl Olsen, Helge Stenvold, Samer Al-Saad, Tom
   Dønnem, Elin Richardsen, Roy M Bremnes, and Lill-Tove Rasmussen Busund. 
   [Transcription factor PAX6 as a novel prognostic factor and putative tumour
   suppressor in non-small cell lung
-  cancer](https://www.nature.com/articles/s41598-018-23417-z)
+  cancer](https://www.nature.com/articles/s41598-018-23417-z).
   Scientific Reports 2018. 
 - **Bjørn Fjukstad**, Nina Angelvik, Maria Wulff Hauglann, Joachim Sveia 
   Knutsen, Morten Grønnesby, Hedinn Gunhildrud, and Lars Ailo Bongo. 
@@ -46,7 +52,6 @@ Here's a (hopefully) updated list of my publications, talks etc.
   Bongo. [Kvik: Interactive exploration of genomic data from the NOWAC
   postgenome biobank.](http://ojs.bibsys.no/index.php/NIK/article/view/11) in
   Proc. of NIK 2014. November 2014, Fredrikstad, Norway.
-  
 - Giacomo Tartari, Lars Tiede, Einar Jakobsen Holsbø, Kenneth Knudsen, Inge
   Alexander Raknes, **Bjørn Fjukstad**, Nicolle Mode, John Markus Bjørndalen,
   Eiliv Lund, Lars Ailo Bongo. [Mr. Clean: a tool for tracking and comparing the
