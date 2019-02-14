@@ -43,10 +43,11 @@ Here's a (hopefully) updated list of my publications, talks etc.
   Vanessa Dumeaux, **Bjørn Fjukstad**, Hans E Fjosne, Jan-Ole Frantzen, Marit
   Muri Holmen, Enno Rodegerdts, Ellen Schlichting, Anne-Lise Børresen-Dale, Lars
   Ailo Bongo, Eiliv Lund, Michael Hallett.  PLoS Computational Biology 2017. 
-- **Bjørn Fjukstad**, Vanessa Dumeaux, Karina Standahl Olsen, Michael Hallett,
-  Eiliv Lund, Lars Ailo Bongo [Building Applications For Interactive Data 
+-  [Building Applications For Interactive Data 
   Exploration In Systems 
   Biology](http://dl.acm.org/citation.cfm?id=3107481), ([bioRxiv](http://biorxiv.org/content/early/2017/05/24/141630)).
+  **Bjørn Fjukstad**, Vanessa Dumeaux, Karina Standahl Olsen, Michael Hallett,
+  Eiliv Lund, Lars Ailo Bongo
   The 8th ACM Conference on Bioinformatics, Computational Biology, and Health Informatics (ACM BCB) 2017.
 - [Kvik: three-tier data exploration tools for flexible analysis of genomic data in epidemiological studies](http://f1000research.com/articles/4-81/v2)
     **Bjørn Fjukstad**, Karina Standahl Olsen, Mie Jareid, Eiliv Lund, Lars Ailo
@@ -64,6 +65,9 @@ Here's a (hopefully) updated list of my publications, talks etc.
   Visualization (VISSOFT 2014). September 2014, Victoria, Canada.
 
 ### Talks
+- [Reproducible Data Analysis Pipelines for Precision
+  Medicine](pdp2019-presentation.pdf). 27th Euromicro International
+  Conference on Parallel, Distributed and Network-based Processing. 14. February 2019. Pavia, Italy. 
 - [Toward Reproducible Analysis and Exploration of High-Throughput Biological Datasets](/research/thesis-presentation.pdf).
   Doctoral thesis presentation. 21 January 2019. Tromsø, Norway. 
 - [Why it’s hard to reproduce results in software](/research/why-its-hard-to-reproduce-results-in-software.pdf). 
