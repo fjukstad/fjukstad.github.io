@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Bjørn Fjukstad</title>
+    <link>http://fjukstad.github.com/blog/</link>
+    <description>Recent content in Blog on Bjørn Fjukstad</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>bjornfjukstad@gmail.com (Bjørn Fjukstad)</managingEditor>
+    <webMaster>bjornfjukstad@gmail.com (Bjørn Fjukstad)</webMaster>
+    <lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://fjukstad.github.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World!</title>
+      <link>http://fjukstad.github.com/blog/hello-world/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <author>bjornfjukstad@gmail.com (Bjørn Fjukstad)</author>
+      <guid>http://fjukstad.github.com/blog/hello-world/</guid>
+      <description>I have been wanting to get started with technical writing for a while now. Hopefully, re-writing my fjukstad.github.io website to use hugo, and creating a /blog menu item on my website will get me started.
+At the moment I am working on data analysis and visualization of covid-19 data for the company I work at, DIPS, and I believe that the first real post will be about just that. For those of you who do not know, DIPS is an electronic patient health record systems used in the majority of Norwegian hospitals.</description>
+    </item>
+    
+  </channel>
+</rss>
