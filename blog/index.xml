@@ -14,15 +14,6 @@
     
     
     <item>
-      <title>Enabling Data Science in DIPS</title>
-      <link>http://fjukstad.github.com/blog/enabling-data-science-in-dips/</link>
-      <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
-      <author>bjornfjukstad@gmail.com (Bjørn Fjukstad)</author>
-      <guid>http://fjukstad.github.com/blog/enabling-data-science-in-dips/</guid>
-      <description>At DIPS we are currently productionizing our new electronic health record (EHR) system, DIPS Arena. With DIPS Arena we have made the move to store structured clinical data with openEHR. openEHR is an open technology for e-health systems that help different vendors to build interoperable systems for healthcare. In other words, it helps define the different clinical concepts, e.g. blood pressures, body temperatures etc, how we can represent them, and how we can retrieve them from systems that implement an openEHR API.</description>
-    </item>
-    
-    <item>
       <title>Soltimer Påsken 2020</title>
       <link>http://fjukstad.github.com/blog/sun-hours/</link>
       <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
