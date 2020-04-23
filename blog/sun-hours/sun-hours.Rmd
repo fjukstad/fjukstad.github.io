@@ -55,14 +55,14 @@ ggplot() +
                aes(x=long,y = lat, group = group), 
                fill="grey", alpha=0.3) + 
   geom_point(data = data, 
-             aes(x=long,y=lat,size=hours),
+             aes(x=long,y=lat, size=hours),
              color="orange",
              alpha = 0.8,
              show.legend = F) + 
   geom_text(data = data,
-            aes(x=long, y=lat, label=hours),
-            color="#222222") + 
-  scale_size_continuous(range = c(6.4, 43.4)) +
+            aes(x=long, y=lat, label=hours), 
+						color="#222222") + 
+  scale_size(range = c(6.4, 43.4)) +
   theme(legend.position="none") + 
   labs(title="Soltimer i påska", subtitle="Skjærtorsdag til 2. påskedag") + 
   theme_void()

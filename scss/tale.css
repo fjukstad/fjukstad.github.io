@@ -37,7 +37,9 @@ hr {
 
 .post table {
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-top: 2em; }
 
 * {
   -webkit-box-sizing: border-box;
