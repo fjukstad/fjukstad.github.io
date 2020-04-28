@@ -8,10 +8,20 @@
     <language>en-us</language>
     <managingEditor>bjornfjukstad@gmail.com (Bjørn Fjukstad)</managingEditor>
     <webMaster>bjornfjukstad@gmail.com (Bjørn Fjukstad)</webMaster>
-    <lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://fjukstad.github.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>p5.js</title>
+      <link>http://fjukstad.github.com/blog/p5js/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      <author>bjornfjukstad@gmail.com (Bjørn Fjukstad)</author>
+      <guid>http://fjukstad.github.com/blog/p5js/</guid>
+      <description>In Bodø I help organize local the coding club. Because of the covid-19 situation we are hosting the club on Discord, rather than in person at the public library in Bodø. This afternoon the participants were working fairly idependent, so I had some time to sit down some more with p5.js.
+p5.js is a great Javascript library for creating visual content in the web browser, e.g. animations, games, art etc. In short a p5.</description>
+    </item>
     
     <item>
       <title>Enabling Data Science in DIPS</title>
@@ -40,15 +50,6 @@ Av bildet kan det se ut som om solene er skalert opp og ned basert på antall so
       <guid>http://fjukstad.github.com/blog/hello-world/</guid>
       <description>I have been wanting to get started with technical writing for a while now. Hopefully, re-writing my fjukstad.github.io website to use hugo, and creating a /blog menu item on my website will get me started.
 At the moment I am working on data analysis and visualization of covid-19 data for the company I work at, DIPS, and I believe that the first real post will be about just that. For those of you who do not know, DIPS is both the name of the company, and the name of the electronic patient health record systems used by the majority of Norwegian hospitals.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://fjukstad.github.com/blog/p5js-trees/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>bjornfjukstad@gmail.com (Bjørn Fjukstad)</author>
-      <guid>http://fjukstad.github.com/blog/p5js-trees/</guid>
-      <description></description>
     </item>
     
     <item>

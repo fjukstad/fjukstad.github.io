@@ -4,12 +4,17 @@
   
   <url>
     <loc>http://fjukstad.github.com/</loc>
-    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://fjukstad.github.com/blog/</loc>
-    <lastmod>2020-04-23T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fjukstad.github.com/blog/p5js/</loc>
+    <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -25,10 +30,6 @@
   <url>
     <loc>http://fjukstad.github.com/blog/hello-world/</loc>
     <lastmod>2020-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://fjukstad.github.com/blog/p5js-trees/</loc>
   </url>
   
   <url>
