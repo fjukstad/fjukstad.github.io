@@ -1,5 +1,5 @@
 ---
-title: Analyzing covid-19 data in DIPS 
+title: Analyzing COVID-19 data at DIPS 
 date: 2020-05-12
 draft: false
 author: Bjørn Fjukstad
@@ -9,13 +9,13 @@ A couple of weeks ago I published a post on [how we enable data science at
 DIPS](/blog/enabling-data-science-in-dips), which told the story on how we can
 get data from our openEHR server in the R programming language. To make things
 even more interesting, this post will show how we can get screening symptoms
-from covid-19 patients registered in our openEHR Server in DIPS Arena. With this
+from COVID-19 patients registered in our openEHR Server in DIPS Arena. With this
 data we can create reports with [R Markdown](https://rmarkdown.rstudio.com),
 beautiful [Shiny dashboards](https://shiny.rstudio.com), and open up for
 researchers to explore and analyze the data in their own environment.
 
 This spring at [DIPS](https://dips.com/uk) we have developed systems to register
-a patient's covid-19-specific symptoms, if contact tracing has been started, and
+a patient's COVID-19-specific symptoms, if contact tracing has been started, and
 the results from the diagnostic tests.
 (News story in Norwegian
 [here](https://www.nrk.no/nordland/dips-med-app-som-skal-hjelpe-med-kartlegging-og-sporing-av-koronavirus-1.14982075))
@@ -108,7 +108,7 @@ data %>%
 
 ```
 
-Further we could look at the covid-19 diagnostic statuses, maybe even drill down
+Further we could look at the COVID-19 diagnostic statuses, maybe even drill down
 to what other types of diseases are registered on these patients. By using openEHR
 to record the symptoms and other clinical data, it becomes a simple task for 
 data analysts to get hold of tidy analysis-ready structured datasets. 
@@ -123,7 +123,7 @@ example of how we can use R together with openEHR to develop specialized
 applications in almost little time. This is because the data registered by 
 clinicians are structured, and we can access them through a standardized API.
 
-![Screenshot of our prototype covid-19 Shiny app](figure/shiny.png)
+![Screenshot of our prototype COVID-19 Shiny app](figure/shiny.png)
 
 What is extremely powerful here, is that we get data from the patient journal 
 system through the [openEHR REST API](https://specifications.openehr.org/releases/ITS-REST/latest/index.html). 

@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Analyzing covid-19 data in DIPS &middot; Bjørn Fjukstad</title>
+		<title>Analyzing COVID-19 data at DIPS &middot; Bjørn Fjukstad</title>
 
 		
   		<link rel="stylesheet" href="/scss/tale.css">
@@ -70,7 +70,7 @@
  
 
 
-		<h1 class="post-title">Analyzing covid-19 data in DIPS</h1>
+		<h1 class="post-title">Analyzing COVID-19 data at DIPS</h1>
 <div class="post-line"></div>
 
 		
@@ -79,12 +79,12 @@
 DIPS</a>, which told the story on how we can
 get data from our openEHR server in the R programming language. To make things
 even more interesting, this post will show how we can get screening symptoms
-from covid-19 patients registered in our openEHR Server in DIPS Arena. With this
+from COVID-19 patients registered in our openEHR Server in DIPS Arena. With this
 data we can create reports with <a href="https://rmarkdown.rstudio.com">R Markdown</a>,
 beautiful <a href="https://shiny.rstudio.com">Shiny dashboards</a>, and open up for
 researchers to explore and analyze the data in their own environment.</p>
 <p>This spring at <a href="https://dips.com/uk">DIPS</a> we have developed systems to register
-a patient&rsquo;s covid-19-specific symptoms, if contact tracing has been started, and
+a patient&rsquo;s COVID-19-specific symptoms, if contact tracing has been started, and
 the results from the diagnostic tests.
 (News story in Norwegian
 <a href="https://www.nrk.no/nordland/dips-med-app-som-skal-hjelpe-med-kartlegging-og-sporing-av-koronavirus-1.14982075">here</a>)
@@ -244,7 +244,7 @@ HTTP REST API endpoint of an openEHR server, e.g.
   <span style="color:#000">scale_x_continuous</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">breaks</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">unique</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">isoweek</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">data</span><span style="color:#ce5c00;font-weight:bold">$</span><span style="color:#000">DateTime</span><span style="color:#000;font-weight:bold">)))</span> <span style="color:#ce5c00;font-weight:bold">+</span> 
   <span style="color:#000">scale_fill_manual</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">values</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#000">c</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;#dd4b39&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#34;#00a65a&#34;</span><span style="color:#000;font-weight:bold">,</span><span style="color:#4e9a06">&#34;#0074B7&#34;</span><span style="color:#000;font-weight:bold">))</span>
 </code></pre></div><p><img src="figure/unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6"></p>
-<p>Further we could look at the covid-19 diagnostic statuses, maybe even drill down
+<p>Further we could look at the COVID-19 diagnostic statuses, maybe even drill down
 to what other types of diseases are registered on these patients. By using openEHR
 to record the symptoms and other clinical data, it becomes a simple task for 
 data analysts to get hold of tidy analysis-ready structured datasets.</p>
@@ -256,7 +256,7 @@ all in Norwegian (because our customers are Norwegian), the screenshot shows an
 example of how we can use R together with openEHR to develop specialized
 applications in almost little time. This is because the data registered by 
 clinicians are structured, and we can access them through a standardized API.</p>
-<p><img src="figure/shiny.png" alt="Screenshot of our prototype covid-19 Shiny app"></p>
+<p><img src="figure/shiny.png" alt="Screenshot of our prototype COVID-19 Shiny app"></p>
 <p>What is extremely powerful here, is that we get data from the patient journal 
 system through the <a href="https://specifications.openehr.org/releases/ITS-REST/latest/index.html">openEHR REST API</a>. 
 With the openEHR REST API specification, any vendor to implement the REST API
