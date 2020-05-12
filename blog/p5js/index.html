@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>p5.js &middot; Bjørn Fjukstad</title>
+
+		
+  		<link rel="stylesheet" href="/scss/tale.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		<link rel="stylesheet" href="/css/custom.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Bjørn Fjukstad" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Bjørn Fjukstad</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/blog/">
+                
+                <span>Blog</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/research/">
+                
+                <span>Research</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/teaching/">
+                
+                <span>Teaching</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		 
+<div class="post-info">
+    <span>Written by</span>
+        Bjørn Fjukstad
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-04-28 00:00:00 &#43;0000 UTC">April 28, 2020</time>
+</div>
+ 
+
+
+		<h1 class="post-title">p5.js</h1>
+<div class="post-line"></div>
+
+		
+
+		<p>In Bodø I help organize local the coding club.  Because of the covid-19
+situation we are hosting the club on Discord, rather than in person at the
+public library in Bodø.  This afternoon the participants were working fairly
+idependent, so I had some time to sit down some more with
+<a href="https://p5js.org">p5.js</a>.</p>
+<p><code>p5.js</code> is a great Javascript library for creating visual content in the web
+browser, e.g. animations, games, art etc. In short a <code>p5.js</code> program consists of
+two main parts: 
+a <code>setup</code> function which runs when the sketch starts up, and <code>draw</code> function
+which runs over and over again forever.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">
+<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">setup</span><span style="color:#000;font-weight:bold">(){</span>
+
+<span style="color:#000;font-weight:bold">}</span>
+
+<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">draw</span><span style="color:#000;font-weight:bold">(){</span>
+
+<span style="color:#000;font-weight:bold">}</span>
+
+</code></pre></div><p>You write ordinary Javascript, and
+the big strength is that you don&rsquo;t have to worry about how to manipulate pixels
+on the sceren, you simply write <code>ellipse(x, y, r);</code> to draw an ellipse, or
+<code>rect(x, y, h, w);</code> to draw a rectangle.</p>
+<p>For example the sketch</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">setup</span><span style="color:#000;font-weight:bold">(){</span>
+	<span style="color:#000">createCanvas</span><span style="color:#000;font-weight:bold">(</span><span style="color:#0000cf;font-weight:bold">500</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">500</span><span style="color:#000;font-weight:bold">);</span>
+<span style="color:#000;font-weight:bold">}</span> 
+
+<span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">draw</span><span style="color:#000;font-weight:bold">()</span> <span style="color:#000;font-weight:bold">{</span> 
+	<span style="color:#000">ellipse</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">mouseX</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">mouseY</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#0000cf;font-weight:bold">20</span><span style="color:#000;font-weight:bold">);</span> 
+<span style="color:#000;font-weight:bold">}</span> 
+</code></pre></div><p>produces the following output</p>
+<p><img src="screenshot2.png" alt="screenshot2">.</p>
+<p>Notice that we get mouse input for free as well!</p>
+<p>In addition to <code>p5js</code>, there are <a href="https://p5js.org/libraries/">many great <code>p5.js</code>
+libraries</a>, for example libraries for detecting
+collisions between objects, libraries for playing sound, connecting to bluetooth
+etc.</p>
+<p>There is even an online editor at <a href="https://editor.p5js.org/">editor.p5js.org</a> if
+you want to try it out.</p>
+<p>In the short session this afternoon, I was able to write a simple implementation
+of the traditional Pong game. Below is a small scerenshot of the game, and
+you&rsquo;ll find <a href="https://github.com/fjukstad/p5js-pong">code in my github</a>.</p>
+<p><img src="screenshot.png" alt="screenshot"></p>
+<p>Maybe I&rsquo;ll do a <a href="https://twitch.com/bjornfjukstad">Twitch stream</a> next week for
+the Coding Club, and go through the solution in details, as well as how a
+website actually work.</p>
+
+
+		
+	</div>
+	 
+	<div class="pagination">
+		<a href="/blog/enabling-data-science-in-dips/" class="left arrow">&#8592;</a>
+		<a href="/blog/openehr-covid-19/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+	
+</main>
+
+
+        <hr/>
+<div class="wrapper">
+	<div class="w33">
+		<ul>
+			<li> Bjørn Fjukstad </li>
+			<li> <a href="mailto:bjornfjukstad@gmail.com">bjornfjukstad@gmail.com</a></li> 
+		</ul>
+	</div>
+	<div class="w33 text-center">
+		<ul>
+			<li>
+				Twitter: <a href="https://twitter.com/fjukstad" target="_blank">fjukstad</a>
+			</li> 
+			<li> 
+				Github: <a href="https://github.com/fjukstad" target="_blank">fjukstad</a>
+			</li> 
+		</ul>
+	</div>
+
+	<div class="w33 text-right">
+		<ul>
+			<li>Software Developer at DIPS</li>
+		</ul>
+	</div>
+</div>
+
+    </body>
+</html>
