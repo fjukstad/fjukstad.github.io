@@ -8,10 +8,29 @@
     <language>en-us</language>
     <managingEditor>bjornfjukstad@gmail.com (Bjørn Fjukstad)</managingEditor>
     <webMaster>bjornfjukstad@gmail.com (Bjørn Fjukstad)</webMaster>
-    <lastBuildDate>Thu, 23 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://fjukstad.github.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Analyzing covid-19 data in DIPS</title>
+      <link>http://fjukstad.github.com/blog/openehr-covid-19/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      <author>bjornfjukstad@gmail.com (Bjørn Fjukstad)</author>
+      <guid>http://fjukstad.github.com/blog/openehr-covid-19/</guid>
+      <description>A couple of weeks ago I published a post on how we enable data science at DIPS, which told the story on how we can get data from our openEHR server in the R programming language. To make things even more interesting, this post will show how we can get screening symptoms from covid-19 patients registered in our openEHR Server in DIPS Arena. With this data we can create reports with R Markdown, beautiful Shiny dashboards, and open up for researchers to explore and analyze the data in their own environment.</description>
+    </item>
+    
+    <item>
+      <title>p5.js</title>
+      <link>http://fjukstad.github.com/blog/p5js/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      <author>bjornfjukstad@gmail.com (Bjørn Fjukstad)</author>
+      <guid>http://fjukstad.github.com/blog/p5js/</guid>
+      <description>In Bodø I help organize local the coding club. Because of the covid-19 situation we are hosting the club on Discord, rather than in person at the public library in Bodø. This afternoon the participants were working fairly idependent, so I had some time to sit down some more with p5.js.
+p5.js is a great Javascript library for creating visual content in the web browser, e.g. animations, games, art etc. In short a p5.</description>
+    </item>
     
     <item>
       <title>Enabling Data Science in DIPS</title>
