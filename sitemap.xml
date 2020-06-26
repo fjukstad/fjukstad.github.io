@@ -4,16 +4,21 @@
   
   <url>
     <loc>http://fjukstad.github.com/</loc>
-    <lastmod>2020-05-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://fjukstad.github.com/blog/openehr-covid-19/</loc>
-    <lastmod>2020-05-12T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://fjukstad.github.com/blog/</loc>
+    <lastmod>2020-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fjukstad.github.com/blog/open-sourcing-openehr-packages/</loc>
+    <lastmod>2020-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://fjukstad.github.com/blog/openehr-covid-19/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -35,10 +40,6 @@
   <url>
     <loc>http://fjukstad.github.com/blog/hello-world/</loc>
     <lastmod>2020-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://fjukstad.github.com/blog/p5js-trees/</loc>
   </url>
   
   <url>
