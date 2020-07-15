@@ -8,10 +8,21 @@
     <language>en-us</language>
     <managingEditor>bjornfjukstad@gmail.com (Bjørn Fjukstad)</managingEditor>
     <webMaster>bjornfjukstad@gmail.com (Bjørn Fjukstad)</webMaster>
-    <lastBuildDate>Fri, 26 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://fjukstad.github.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>.NET Core tools and Github Actions</title>
+      <link>http://fjukstad.github.com/blog/scrub/</link>
+      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
+      <author>bjornfjukstad@gmail.com (Bjørn Fjukstad)</author>
+      <guid>http://fjukstad.github.com/blog/scrub/</guid>
+      <description>TL;DR .NET Core tools are a great way of developing small platform-independent command line tools with C# and .NET. Github Actions are really great for automating the whole process of building, and publishing these tools.
+Introduction Recently I have been switching a lot between Powershell on Windows and bash in Ubuntu in WSL to get some of our openEHR components in .NET running on Linux.
+Since I was switching back and forth between the different shells, there were times when I wished I had access to the same tools in both shells.</description>
+    </item>
     
     <item>
       <title>Open-sourcing openEHR packages</title>

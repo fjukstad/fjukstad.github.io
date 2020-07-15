@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>.NET Core tools and Github Actions &middot; Bjørn Fjukstad</title>
+
+		
+  		<link rel="stylesheet" href="/scss/tale.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		<link rel="stylesheet" href="/css/custom.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Bjørn Fjukstad" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Bjørn Fjukstad</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/blog/">
+                
+                <span>Blog</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/research/">
+                
+                <span>Research</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/teaching/">
+                
+                <span>Teaching</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		 
+<div class="post-info">
+    <span>Written by</span>
+        Bjørn Fjukstad
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-07-15 00:00:00 &#43;0000 UTC">July 15, 2020</time>
+</div>
+ 
+
+
+		<h1 class="post-title">.NET Core tools and Github Actions</h1>
+<div class="post-line"></div>
+
+		
+
+		<p>TL;DR <a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools-how-to-create">.NET Core tools</a>
+are a great way of developing small platform-independent command line tools
+with C# and .NET. <a href="https://github.com/features/actions">Github Actions</a> are
+really great for automating the whole process of building, and publishing
+these tools.</p>
+<h1 id="introduction">Introduction</h1>
+<p>Recently I have been switching a lot between <code>Powershell</code> on Windows and <code>bash</code>
+in Ubuntu in <a href="https://docs.microsoft.com/en-us/windows/wsl/">WSL</a> to get some
+of our <a href="https://www.openehr.org/">openEHR</a> components in .NET running on
+Linux.</p>
+<p>Since I was switching back and forth between the different shells,
+there were times when I wished I had access to the same tools in both shells.
+For example, in the development process I wanted to remove all build
+artifacts to make a clean build. On Ubuntu I could run a command such as
+<code>find . -name bin -exec rm -rf {} \;</code> to recursively find and remove all
+folders named <code>bin</code>. In <code>Powershell</code>, I had to find a separate command and
+run that etc. etc.</p>
+<p>Since I had been hearing a lot about .NET Core tools, and building code with
+Github Actions, I thought that it would be a fun experiment to create a small
+tool for removing directories, and publishing it as a .NET Core tool to
+<a href="https://nuget.org">nuget.org</a>.</p>
+<h1 id="background">Background</h1>
+<p>When we compile code or fetch dependencies in .NET projects, the build tools
+usually put the build artifacts into <code>bin/</code> and <code>obj/</code> folders within the
+project. Once in a while it might be useful to clean out these directories.</p>
+<p>When you install the <a href="https://dotnet.microsoft.com/download">.NET Core CLI</a> you
+get a bunch of different CLI tools for developing your software.
+<a href="https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-clean"><code>dotnet clean</code></a>
+is a tool that cleans out the output from the previous build. However, it only
+cleans out build artifacts specified in a MSBuild project or solution.
+And the project had been built on Windows, running <code>dotnet clean</code>
+on Ubuntu in WSL resulted in error messages such as
+<code>NuGet.Packaging.Core.PackagingException: Unable to find fallback package folder 'C:\Program Files\dotnet\sdk\NuGetFallbackFolder'.</code>
+which does not make a lot of sense on Ubuntu.</p>
+<p>In addition, the library I was working on targeted both <code>net461</code> and
+<code>netstandard2.0</code>, and since .NET Framework is not a thing on Ubuntu, running
+<code>dotnet clean</code> after building it on Windows, left <code>net641</code> <code>dll</code>s and other build
+artifacts in the output directories.</p>
+<p>As I already mentioned, in bash on Ubuntu I had a command for removing all
+<code>bin/</code> and <code>obj/</code> folders, but I wanted to run this command both from
+<code>Powershell</code> and <code>bash</code>. So instead of finding a similar command in
+<code>Powershell</code>, I wrote my first .NET Core tool, <code>scrub</code>.</p>
+<h1 id="step-1-build-the-net-core-tool">Step 1: Build the .NET Core tool</h1>
+<p>I followed the guide on how to create a .NET Core tool at
+<a href="https://docs.microsoft.com/en-us/dotnet/core/tools/global-tools-how-to-create">docs.microsoft.com</a>
+where it all started with <code>dotnet new console scrub</code>. To parse command line
+flags etc. I used
+<a href="https://github.com/dotnet/command-line-api/wiki/Your-first-app-with-System.CommandLine.DragonFruit">System.CommandLine.DragonFruit</a>
+which is great and easy to use. When I was mostly happy
+with <code>scrub</code> I packed it up with <code>dotnet pack</code> locally and installed it with
+<code>dotnet tool install</code> to see that everything worked as planned.</p>
+<h1 id="step-2-push-to-github-and-create-a-workflow">Step 2: Push to Github and create a Workflow</h1>
+<p>I set up a <a href="https://github.com/fjukstad/scrub">scrub</a> repository and created
+a .NET Core workflow in Github Actions from the starter workflows. This
+workflow simply restores the dependencies and builds the project. A Github
+Workflow is just a <code>yaml</code> file with the different steps of the build. In the
+starter workflow these are simply <code>dotnet restore</code> and <code>dotnet build</code>. Below
+is the starter workflow, which I copied from the
+<a href="https://github.com/actions/starter-workflows/blob/master/ci/dotnet-core.yml">starter-workflows repository</a>.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>.NET<span style="color:#f8f8f8;text-decoration:underline"> </span>Core<span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">on</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">push</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">branches</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000;font-weight:bold">[</span>master<span style="color:#000;font-weight:bold">]</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">pull_request</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">branches</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000;font-weight:bold">[</span>master<span style="color:#000;font-weight:bold">]</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">jobs</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">build</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">runs-on</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>ubuntu-latest<span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">    </span><span style="color:#204a87;font-weight:bold">steps</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#204a87;font-weight:bold">uses</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>actions/checkout@v2<span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>Setup<span style="color:#f8f8f8;text-decoration:underline"> </span>.NET<span style="color:#f8f8f8;text-decoration:underline"> </span>Core<span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">        </span><span style="color:#204a87;font-weight:bold">uses</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>actions/setup-dotnet@v1<span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">        </span><span style="color:#204a87;font-weight:bold">with</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">          </span><span style="color:#204a87;font-weight:bold">dotnet-version</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#0000cf;font-weight:bold">3.1.101</span><span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>Install<span style="color:#f8f8f8;text-decoration:underline"> </span>dependencies<span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">        </span><span style="color:#204a87;font-weight:bold">run</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>dotnet<span style="color:#f8f8f8;text-decoration:underline"> </span>restore<span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>Build<span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">        </span><span style="color:#204a87;font-weight:bold">run</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>dotnet<span style="color:#f8f8f8;text-decoration:underline"> </span>build<span style="color:#f8f8f8;text-decoration:underline"> </span>--configuration<span style="color:#f8f8f8;text-decoration:underline"> </span>Release<span style="color:#f8f8f8;text-decoration:underline"> </span>--no-restore<span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">      </span>- <span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>Test<span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">        </span><span style="color:#204a87;font-weight:bold">run</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>dotnet<span style="color:#f8f8f8;text-decoration:underline"> </span>test<span style="color:#f8f8f8;text-decoration:underline"> </span>--no-restore<span style="color:#f8f8f8;text-decoration:underline"> </span>--verbosity<span style="color:#f8f8f8;text-decoration:underline"> </span>normal<span style="color:#f8f8f8;text-decoration:underline">
+</span></code></pre></div><p>The workflow above is fairly simple: it gets the dependencies, builds the project,
+and runs the tests. You can specify what version of the .NET SDK</p>
+<p>The Github workflows are very similar to
+<a href="https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops">Azure Pipelines</a>
+if you have tried them out.</p>
+<h1 id="step-3-get-an-api-key">Step 3: Get an API Key</h1>
+<p>To push packages to <a href="https://nuget.org">nuget.org</a> you&rsquo;ll need a user
+account, and an API KEY. I set up my account and created an API
+<a href="https://www.nuget.org/account/apikeys">here</a>.</p>
+<p>When I had my API key, I stored it as a
+<a href="https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets">secret</a>
+in my repository, and named it <code>NUGET_API_KEY</code> which I could use in my Workflow.</p>
+<h1 id="step-4-update-the-workflow-to-get-it-to-push-to-nugetorg">Step 4: Update the workflow to get it to push to nuget.org</h1>
+<p>To get a .NET Core tool pushed to <a href="https://nuget.org">nuget.org</a> you simply
+need to add a <code>dotnet pack</code> and a <code>dotnet nuget push</code> step to the Workflow:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>Pack<span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">run</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>dotnet<span style="color:#f8f8f8;text-decoration:underline"> </span>pack<span style="color:#f8f8f8;text-decoration:underline"> </span>-c<span style="color:#f8f8f8;text-decoration:underline"> </span>Release<span style="color:#f8f8f8;text-decoration:underline"> </span>-o<span style="color:#f8f8f8;text-decoration:underline"> </span>out<span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline"></span>- <span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>Push<span style="color:#f8f8f8;text-decoration:underline"> </span>generated<span style="color:#f8f8f8;text-decoration:underline"> </span>package<span style="color:#f8f8f8;text-decoration:underline"> </span>to<span style="color:#f8f8f8;text-decoration:underline"> </span>GitHub<span style="color:#f8f8f8;text-decoration:underline"> </span>registry<span style="color:#f8f8f8;text-decoration:underline">
+</span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">run</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span>dotnet<span style="color:#f8f8f8;text-decoration:underline"> </span>nuget<span style="color:#f8f8f8;text-decoration:underline"> </span>push<span style="color:#f8f8f8;text-decoration:underline"> </span>out/<span style="color:#8f5902;font-style:italic">*.nupkg</span><span style="color:#f8f8f8;text-decoration:underline"> </span>-k<span style="color:#f8f8f8;text-decoration:underline"> </span>${{<span style="color:#f8f8f8;text-decoration:underline"> </span>secrets.NUGET_API_KEY<span style="color:#f8f8f8;text-decoration:underline"> </span>}}<span style="color:#f8f8f8;text-decoration:underline"> </span>--skip-duplicate<span style="color:#f8f8f8;text-decoration:underline"> </span>--no-symbols<span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#204a87;font-weight:bold">true</span><span style="color:#f8f8f8;text-decoration:underline"> </span>-s<span style="color:#f8f8f8;text-decoration:underline"> </span>https<span style="color:#000;font-weight:bold">:</span>//api.nuget.org/v3/index.json<span style="color:#f8f8f8;text-decoration:underline">
+</span></code></pre></div><p>That&rsquo;s it! It&rsquo;s pushed to <a href="https://www.nuget.org/packages/scrub">nuget.org/packages/scrub</a> and it&rsquo;s possible to download and install it with</p>
+<pre><code>dotnet tool install scrub
+</code></pre><h1 id="conclusion">Conclusion</h1>
+<p>.NET Core tools are a neat way of developing small platform-independent
+command line tools. If you come from the <a href="https://golang.org">go</a> community, you
+are probably used to getting small tools with <code>go install</code>, and these .NET
+Core tools are very similar. The largest difference is however that with <code>go</code>
+you can install a tool from source, or a Github repository, while with the
+current <code>dotnet tool install</code> you&rsquo;ll have to specify a NuGet package. It
+would be interesting to try to implement something like
+<code>dotnet tool install github.com/fjukstad/scrub</code> though!</p>
+<p>Github Actions were also nice to get started with. Easy to set up a build,
+and the build stays together with your code, nice and simple. Would
+reccommend to a friend!</p>
+
+
+		
+	</div>
+	 
+	<div class="pagination">
+		<a href="/blog/open-sourcing-openehr-packages/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+	
+</main>
+
+
+        <hr/>
+<div class="wrapper">
+	<div class="w33">
+		<ul>
+			<li> Bjørn Fjukstad </li>
+			<li> <a href="mailto:bjornfjukstad@gmail.com">bjornfjukstad@gmail.com</a></li> 
+		</ul>
+	</div>
+	<div class="w33 text-center">
+		<ul>
+			<li>
+				Twitter: <a href="https://twitter.com/fjukstad" target="_blank">fjukstad</a>
+			</li> 
+			<li> 
+				Github: <a href="https://github.com/fjukstad" target="_blank">fjukstad</a>
+			</li> 
+		</ul>
+	</div>
+
+	<div class="w33 text-right">
+		<ul>
+			<li>Software Developer at DIPS</li>
+		</ul>
+	</div>
+</div>
+
+    </body>
+</html>
