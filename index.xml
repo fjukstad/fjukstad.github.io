@@ -8,15 +8,24 @@
     <language>en-us</language>
     <managingEditor>bjornfjukstad@gmail.com (Bjørn Fjukstad)</managingEditor>
     <webMaster>bjornfjukstad@gmail.com (Bjørn Fjukstad)</webMaster>
-    <lastBuildDate>Wed, 15 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://fjukstad.github.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Personal ECGs with the Withings Move ECG</title>
+      <link>http://fjukstad.github.com/blog/withings/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      <author>bjornfjukstad@gmail.com (Bjørn Fjukstad)</author>
+      <guid>http://fjukstad.github.com/blog/withings/</guid>
+      <description>Last week I got hold of the Withings Move ECG, an analog smart watch that can record electrocardiograms (ECGs). While recording ECGs has been available on the Apple Watches, Withings is the only company that has easily opened up the raw ECG data through their API. There are rumors that Apple will allow 3rd party developers to read the raw ECG data in iOS 14. Withings on the other hand has included raw ECG data in their API since October 2019.</description>
+    </item>
+    
+    <item>
       <title>.NET Core tools and Github Actions</title>
       <link>http://fjukstad.github.com/blog/scrub/</link>
-      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
       <author>bjornfjukstad@gmail.com (Bjørn Fjukstad)</author>
       <guid>http://fjukstad.github.com/blog/scrub/</guid>
       <description>TL;DR .NET Core tools are a great way of developing small platform-independent command line tools with C# and .NET. Github Actions are really great for automating the whole process of building, and publishing these tools.
