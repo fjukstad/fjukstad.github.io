@@ -8,10 +8,20 @@
     <language>en-us</language>
     <managingEditor>bjornfjukstad@gmail.com (Bjørn Fjukstad)</managingEditor>
     <webMaster>bjornfjukstad@gmail.com (Bjørn Fjukstad)</webMaster>
-    <lastBuildDate>Wed, 28 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://fjukstad.github.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Synthetic Patient Data</title>
+      <link>http://fjukstad.github.com/blog/synthetic-data/</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
+      <author>bjornfjukstad@gmail.com (Bjørn Fjukstad)</author>
+      <guid>http://fjukstad.github.com/blog/synthetic-data/</guid>
+      <description>When we&amp;rsquo;re developing software systems, it&amp;rsquo;s useful to fill them with data to illustrate and test how they work. For example, to show that the online store we are developing works as expected, we fill it up with products that we can purchase. Likewise, when we&amp;rsquo;re developing electronic health record (EHR) systems, it&amp;rsquo;s useful to fill them up with patient data.
+While we can use real products to fill online stores, we cannot fill the EHR system we are developing with real patient data.</description>
+    </item>
     
     <item>
       <title>Configuration and environment variables in .NET Core</title>
