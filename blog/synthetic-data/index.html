@@ -97,13 +97,13 @@ default, the patients in Synthea are from Massachusetts in the US, but there is 
 repository with configuration files for international locations.</p>
 <p><code>synthea-international</code> already had Norwegian hospitals, but unfortunately it
 only had support for English and Finnish names. Last week we organized our
-hackathon, <code>d:hack</code>, at <a href="http://dips.no/">DIPS</a>, so I decided to add support for
-Norwegian names.</p>
+hackathon, <code>d:hack</code>, at <a href="http://dips.no/">DIPS</a>, so <a href="https://github.com/synthetichealth/synthea-international/pull/7">I decided to add support for
+Norwegian names.</a></p>
 <p>When you now run <code>synthea-international</code> to generate Norwegian resources (See
 <a href="https://github.com/synthetichealth/synthea-international">synthea-international</a> 
 for more information), you get patients with Norwegian names.
 For example, to generate five patients from Bodø, Norway, you can run</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">./run_synthea -p <span style="color:#0000cf;font-weight:bold">5</span> Bodø Nordland
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">./run_synthea -p <span style="color:#0000cf;font-weight:bold">5</span> Nordland Bodø
 </code></pre></div><p>This command will generate five 
 <a href="https://www.hl7.org/fhir/bundle.html">FHIR Bundles</a> 
 that contain the complete patient histories for each patient.  Here&rsquo;s an excerpt
