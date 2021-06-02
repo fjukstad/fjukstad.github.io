@@ -247,19 +247,19 @@ HTTP REST API endpoint of an openEHR server, e.g.
 </code></pre></div><p><img src="figure/unnamed-chunk-6-1.png" alt="plot of chunk unnamed-chunk-6"></p>
 <p>Further we could look at the COVID-19 diagnostic statuses, maybe even drill down
 to what other types of diseases are registered on these patients. By using openEHR
-to record the symptoms and other clinical data, it becomes a simple task for 
+to record the symptoms and other clinical data, it becomes a simple task for
 data analysts to get hold of tidy analysis-ready structured datasets.</p>
 <h1 id="bonus-shiny-apps">Bonus: Shiny Apps</h1>
-<p>With the above code we can easily develop <a href="https://shiny.rstudio.com/">Shiny Apps</a> 
+<p>With the above code we can easily develop <a href="https://shiny.rstudio.com/">Shiny Apps</a>
 that bring together the plots and tables in a web app. Below is a screenshot
 of a prototype I developed over the course of a week. While the text labels are
 all in Norwegian (because our customers are Norwegian), the screenshot shows an
 example of how we can use R together with openEHR to develop specialized
-applications in almost little time. This is because the data registered by 
+applications in almost little time. This is because the data registered by
 clinicians are structured, and we can access them through a standardized API.</p>
 <p><img src="figure/shiny.png" alt="Screenshot of our prototype COVID-19 Shiny app"></p>
-<p>What is extremely powerful here, is that we get data from the patient journal 
-system through the <a href="https://specifications.openehr.org/releases/ITS-REST/latest/index.html">openEHR REST API</a>. 
+<p>What is extremely powerful here, is that we get data from the patient journal
+system through the <a href="https://specifications.openehr.org/releases/ITS-REST/latest/index.html">openEHR REST API</a>.
 With the openEHR REST API specification, any vendor to implement the REST API
 and share apps built on top of this API. While some patient journal systems lock
 away the data in proprietary formats and applications, the openEHR REST API

@@ -3,83 +3,74 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://fjukstad.github.com/</loc>
+    <loc>http://fjukstad.github.io/</loc>
     <lastmod>2020-12-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://fjukstad.github.com/blog/</loc>
+    <loc>http://fjukstad.github.io/blog/</loc>
     <lastmod>2020-12-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://fjukstad.github.com/blog/synthetic-data/</loc>
+    <loc>http://fjukstad.github.io/blog/synthetic-data/</loc>
     <lastmod>2020-12-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://fjukstad.github.com/blog/config-and-environment-variables/</loc>
-    <lastmod>2020-10-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://fjukstad.github.com/blog/withings/</loc>
+    <loc>http://fjukstad.github.io/blog/withings/</loc>
     <lastmod>2020-08-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://fjukstad.github.com/blog/scrub/</loc>
+    <loc>http://fjukstad.github.io/blog/scrub/</loc>
     <lastmod>2020-07-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://fjukstad.github.com/blog/open-sourcing-openehr-packages/</loc>
+    <loc>http://fjukstad.github.io/blog/open-sourcing-openehr-packages/</loc>
     <lastmod>2020-06-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://fjukstad.github.com/blog/openehr-covid-19/</loc>
+    <loc>http://fjukstad.github.io/blog/openehr-covid-19/</loc>
     <lastmod>2020-05-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://fjukstad.github.com/blog/p5js/</loc>
+    <loc>http://fjukstad.github.io/blog/p5js/</loc>
     <lastmod>2020-04-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://fjukstad.github.com/blog/enabling-data-science-in-dips/</loc>
+    <loc>http://fjukstad.github.io/blog/enabling-data-science-in-dips/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://fjukstad.github.com/blog/sun-hours/</loc>
+    <loc>http://fjukstad.github.io/blog/sun-hours/</loc>
     <lastmod>2020-04-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://fjukstad.github.com/blog/hello-world/</loc>
+    <loc>http://fjukstad.github.io/blog/hello-world/</loc>
     <lastmod>2020-04-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://fjukstad.github.com/blog/predicting-diabetes-with-openehr/predicting-diabetes/</loc>
+    <loc>http://fjukstad.github.io/categories/</loc>
   </url>
   
   <url>
-    <loc>http://fjukstad.github.com/categories/</loc>
+    <loc>http://fjukstad.github.io/research/</loc>
   </url>
   
   <url>
-    <loc>http://fjukstad.github.com/research/</loc>
+    <loc>http://fjukstad.github.io/tags/</loc>
   </url>
   
   <url>
-    <loc>http://fjukstad.github.com/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>http://fjukstad.github.com/teaching/</loc>
+    <loc>http://fjukstad.github.io/teaching/</loc>
   </url>
   
 </urlset>

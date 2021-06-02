@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Bjørn Fjukstad</title>
-    <link>http://fjukstad.github.com/tags/</link>
+    <link>http://fjukstad.github.io/tags/</link>
     <description>Recent content in Tags on Bjørn Fjukstad</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>bjornfjukstad@gmail.com (Bjørn Fjukstad)</managingEditor>
     <webMaster>bjornfjukstad@gmail.com (Bjørn Fjukstad)</webMaster>
     
-	<atom:link href="http://fjukstad.github.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://fjukstad.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

@@ -75,7 +75,7 @@
 
 		
 
-		<p>Last week I got hold of the 
+		<p>Last week I got hold of the
 <a href="https://www.withings.com/ca/en/move-ecg">Withings Move ECG</a>, an analog smart
 watch that can record electrocardiograms (ECGs). While recording ECGs has been
 available on the Apple Watches, Withings is the only company that has easily
@@ -90,9 +90,9 @@ Withings Health Mate app on my phone, which then uploads the data to your
 account and makes it available through the API. When you have
 <a href="https://account.withings.com/partner/add_oauth2">registered as a Withings API partner</a>
 you can start querying their API.</p>
-<p>Since I am partial to the R programming 
-language, I did some searching on Github, and found 
-<a href="https://github.com/mathesong/rwithings">Granville Matheson&rsquo;s <code>rwithings</code></a> 
+<p>Since I am partial to the R programming
+language, I did some searching on Github, and found
+<a href="https://github.com/mathesong/rwithings">Granville Matheson&rsquo;s <code>rwithings</code></a>
 R package which I could use to download the data. I had some initial issues with
 the package, probably because the API had changed recently, but since the
 package
@@ -101,7 +101,7 @@ Granville even merged my PRs within hours, so a shout out to him for that! Also,
 you should check out his
 post on the <a href="https://www.granvillematheson.com/post/self-portrait/">physiological response to his PhD defence</a>. It shows
 another example of using data from the Withings API.</p>
-<p>When you have installed the <a href="https://github.com/mathesong/rwithings"><code>rwithings</code></a> 
+<p>When you have installed the <a href="https://github.com/mathesong/rwithings"><code>rwithings</code></a>
 R package, it is very simple to get the data. First we load the required packages.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">library</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">rwithings</span><span style="color:#000;font-weight:bold">)</span>
 
@@ -113,8 +113,8 @@ R package, it is very simple to get the data. First we load the required package
 <span style="color:#000">client_secret</span> <span style="color:#ce5c00;font-weight:bold">&lt;-</span> <span style="color:#4e9a06">&#34;4321fdsa&#34;</span>
 <span style="color:#000">token</span> <span style="color:#ce5c00;font-weight:bold">&lt;-</span> <span style="color:#000">withings_auth</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">client_id</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">client_secret</span><span style="color:#000;font-weight:bold">)</span>
 </code></pre></div><p>We can then use this token to get a list of ECGs that were collected last week.
-I&rsquo;ll trim away the <code>deviceid</code> 
-of my watch, just because I&rsquo;m not sure if it&rsquo;s sensitive information or not. 
+I&rsquo;ll trim away the <code>deviceid</code>
+of my watch, just because I&rsquo;m not sure if it&rsquo;s sensitive information or not.
 As a sidenote, I would love if Withings could document their API better with
 regards to the data that comes out. There is no information in the API docs
 about what the data in the different columns actually mean.</p>
@@ -216,7 +216,7 @@ about what the data in the different columns actually mean.</p>
 I use the Health Mate app to infer means &ldquo;No signs of atrial fibrillation&rdquo;. There
 is one recording with <code>ecg.afib=2</code> which I had to look up in the app means that
 the recording couldn&rsquo;t be classified normal rythm or atrial fibrillation. This is
-because I removed my hand from the watch when I did this recording. 
+because I removed my hand from the watch when I did this recording.
 In addition, we get my heart rates and timestamps when they were collected. Since
 the Withings API provides little information on the output, I do not know what
 <code>Model=91</code> means, but I guess its the ID of the Move ECG watch.</p>
@@ -248,7 +248,7 @@ documentation on the output data.</p>
 	 
 	<div class="pagination">
 		<a href="/blog/scrub/" class="left arrow">&#8592;</a>
-		<a href="/blog/config-and-environment-variables/" class="right arrow">&#8594;</a>
+		<a href="/blog/synthetic-data/" class="right arrow">&#8594;</a>
 
 		<a href="#" class="top">Top</a>
 	</div>

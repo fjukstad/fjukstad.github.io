@@ -88,7 +88,7 @@ EHR system. If you want to learn more about openEHR, please take
 a tour of <a href="https://openehr.org">openehr.org</a>.</p>
 <h1 id="how-to-get-data">How to get data</h1>
 <p>To get data from DIPS Arena, or an openEHR server, we execute <a href="https://specifications.openehr.org/releases/QUERY/latest/AQL.html">Archetype Query
-Language (AQL)</a> 
+Language (AQL)</a>
 queries. These look like your usual database queries, with
 <code>select</code>, <code>from</code>, and <code>where</code> clauses. For example if we want to get all blood
 pressures stored in our EHR system we can execute the query</p>
@@ -200,7 +200,7 @@ analysis. And to make it simpler for us to get data from an openEHR server, we
 have developed the <code>openehR</code> R package!</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">library</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">openehR</span><span style="color:#000;font-weight:bold">)</span>
 </code></pre></div><p>With the <code>openehR</code> package we simply specify where the server is running, and
-can then begin executing queries.<code>url</code> is the address of the openEHR REST API 
+can then begin executing queries.<code>url</code> is the address of the openEHR REST API
 endpoint, e.g. <code>http://our-openehr-server/openehr/</code>.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">query</span> <span style="color:#ce5c00;font-weight:bold">&lt;-</span> <span style="color:#4e9a06">&#34;
 </span><span style="color:#4e9a06">select
@@ -256,9 +256,9 @@ endpoint, e.g. <code>http://our-openehr-server/openehr/</code>.</p>
 </tr>
 </tbody>
 </table>
-<p>Since this is an initial version of the <code>openehR</code> package, we leave it 
-up to the caller to convert the variables to the correct data type. In 
-future versions we&rsquo;ll do this automatically. But, with <code>dplyr</code> it&rsquo;s 
+<p>Since this is an initial version of the <code>openehR</code> package, we leave it
+up to the caller to convert the variables to the correct data type. In
+future versions we&rsquo;ll do this automatically. But, with <code>dplyr</code> it&rsquo;s
 an easy step to make sure that the dates are actual <code>date_time</code>s and
 that the blood pressure measurements are numeric.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">%&gt;%</span> 
@@ -266,7 +266,7 @@ that the blood pressure measurements are numeric.</p>
   <span style="color:#000">mutate</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">systolic</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">as.numeric</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">as.character</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">systolic</span><span style="color:#000;font-weight:bold">)))</span> <span style="color:#ce5c00;font-weight:bold">%&gt;%</span> 
   <span style="color:#000">mutate</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">diastolic</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">as.numeric</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">as.character</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">diastolic</span><span style="color:#000;font-weight:bold">)))</span>  <span style="color:#ce5c00;font-weight:bold">%&gt;%</span> 
   <span style="color:#000">arrange</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">desc</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">datetime</span><span style="color:#000;font-weight:bold">))</span>
-</code></pre></div><p>With the variables converted we can start plotting the data. Let&rsquo;s have a 
+</code></pre></div><p>With the variables converted we can start plotting the data. Let&rsquo;s have a
 look at the measurements between 2010 and 2018.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">data</span>  <span style="color:#ce5c00;font-weight:bold">%&gt;%</span> 
   <span style="color:#000">filter</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">datetime</span> <span style="color:#ce5c00;font-weight:bold">&gt;</span> <span style="color:#000">lubridate</span><span style="color:#ce5c00;font-weight:bold">::</span><span style="color:#000">ymd</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;2010-01-01&#34;</span><span style="color:#000;font-weight:bold">))</span> <span style="color:#ce5c00;font-weight:bold">%&gt;%</span> 
