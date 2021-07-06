@@ -8,10 +8,20 @@
     <language>en-us</language>
     <managingEditor>bjornfjukstad@gmail.com (Bjørn Fjukstad)</managingEditor>
     <webMaster>bjornfjukstad@gmail.com (Bjørn Fjukstad)</webMaster>
-    <lastBuildDate>Mon, 14 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jul 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://fjukstad.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bachelor Students 2021</title>
+      <link>http://fjukstad.github.io/blog/bachelor-students-2021/</link>
+      <pubDate>Tue, 06 Jul 2021 00:00:00 +0000</pubDate>
+      <author>bjornfjukstad@gmail.com (Bjørn Fjukstad)</author>
+      <guid>http://fjukstad.github.io/blog/bachelor-students-2021/</guid>
+      <description>This spring I&amp;rsquo;ve been fortunate to advise two student groups in computer science at UiT The Arctic University of Norway in Bodø. There&amp;rsquo;s already a news post in Norwegian about this year&amp;rsquo;s students on the DIPS website (in Norwegian), but I wanted to go into a bit more detail on what they worked on.
+Last year I had a group of four students, who worked on machine learning with electronic health record data at DIPS.</description>
+    </item>
     
     <item>
       <title>Synthetic Patient Data</title>
