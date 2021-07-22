@@ -8,10 +8,16 @@
     <language>en-us</language>
     <managingEditor>bjornfjukstad@gmail.com (Bjørn Fjukstad)</managingEditor>
     <webMaster>bjornfjukstad@gmail.com (Bjørn Fjukstad)</webMaster>
-    <lastBuildDate>Tue, 06 Jul 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://fjukstad.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 21 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://fjukstad.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neovim and .NET</title>
+      <link>http://fjukstad.github.io/blog/nvim-and-dotnet/</link>
+      <pubDate>Wed, 21 Jul 2021 00:00:00 +0000</pubDate>
+      <author>bjornfjukstad@gmail.com (Bjørn Fjukstad)</author>
+      <guid>http://fjukstad.github.io/blog/nvim-and-dotnet/</guid>
+      <description>Just before I went on summer vacation, I spent a couple of weeks writing .NET code in Neovim. In the 0.5 release of Neovim they&amp;rsquo;ve added native support for the Language Server Protocol (LSP), which means that you can get go-to-definition, find-references, completion, and other neat features directly in Neovim.
+I&amp;rsquo;m not a big fan of big clunky IDEs such as Visual Studio, so returning to vim as my daily driver has been on my wish list ever since I started at my current job.</description>
+    </item>
     
     <item>
       <title>Bachelor Students 2021</title>

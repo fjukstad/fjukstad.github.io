@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Neovim and .NET &middot; Bjørn Fjukstad</title>
+
+		
+  		<link rel="stylesheet" href="/scss/tale.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		<link rel="stylesheet" href="/css/custom.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Bjørn Fjukstad" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Bjørn Fjukstad</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/blog/">
+                
+                <span>Blog</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/research/">
+                
+                <span>Research</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/teaching/">
+                
+                <span>Teaching</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		 
+<div class="post-info">
+    <span>Written by</span>
+        Bjørn Fjukstad
+        <br>
+        <span>on&nbsp;</span><time datetime="2021-07-21 00:00:00 &#43;0000 UTC">July 21, 2021</time>
+</div>
+ 
+
+
+		<h1 class="post-title">Neovim and .NET</h1>
+<div class="post-line"></div>
+
+		
+
+		<p><a href="/blog/images/nvim.png"><img src="/blog/images/nvim.png" alt="screenshot of nvim"></a></p>
+<p>Just before I went on summer vacation, I spent a couple of weeks writing .NET
+code in <a href="https://neovim.io/">Neovim</a>. In the 0.5 release of Neovim they&rsquo;ve
+added native support for the Language Server Protocol (LSP), which means that
+you can get go-to-definition, find-references, completion, and other neat
+features directly in Neovim.</p>
+<p>I&rsquo;m not a big fan of big clunky IDEs such as Visual Studio, so returning to vim
+as my daily driver has been on my wish list ever since I started at my current
+job. However, since I&rsquo;m no C# and .NET maestro yet, features such as auto
+completions and finding references is almost necessary to have set up in your
+editor when you&rsquo;re working in a large enterprise codebase.</p>
+<p>With WSL, the Windows Terminal, and Neovim it&rsquo;s now absolutely possible to get a
+great developer experience writing .NET apps on Windows (sort of) without ever
+leaving the terminal.</p>
+<p>Here&rsquo;s a short description of what I did to get everything set up. If you&rsquo;ve
+already set up a dev environment in WSL or Ubuntu, skip to step 5.</p>
+<ol>
+<li>Install the <a href="https://github.com/microsoft/terminal">Windows Terminal</a></li>
+<li>Install <a href="https://docs.microsoft.com/en-us/windows/wsl/">WSL</a></li>
+<li><a href="https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71?activetab=pivot:overviewtab">Download and install Ubuntu 20.04</a> in WSL</li>
+<li>Install the <a href="https://dotnet.microsoft.com/download">.NET SDK</a>.</li>
+<li>Install <a href="https://github.com/neovim/neovim/wiki/Installing-Neovim#homebrew-on-macos-or-linux">Neovim</a>.
+I opted for the Homebrew-route since I&rsquo;m familiar with <code>brew</code> from my mac.</li>
+<li>Install the <a href="https://github.com/OmniSharp/omnisharp-roslyn">OmniSharp</a>
+language server. I downloaded a binary and put it in <code>~/bin</code>.</li>
+<li>Install <a href="https://github.com/neovim/nvim-lspconfig">nvim-lspconfig</a> that
+launches and initializes LSP servers.</li>
+<li>Add the necessary config to your <code>init.nvim</code> to get the keybindings and
+completions set up. For more details, take a look at the <a href="https://github.com/neovim/nvim-lspconfig#keybindings-and-completion">keybindings
+and completion
+section</a>
+in the <code>nvim-config/README.md</code>. Remember to put <code>omnisharp-roslyn</code> in the
+<code>local severs = {}</code> array!</li>
+<li><a href="https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#omnisharp">Configure <code>nvim</code> to launch OmniSharp</a>,
+in other words, point it to where you installed Omnisharp (<code>~/bin</code> on my machine).</li>
+</ol>
+<p>When you&rsquo;ve gone through these steps, you&rsquo;ll get language support for C# amd
+.NET
+directly in Neovim, and you can do all your development work in the Windows
+terminal!</p>
+<p>After two weeks of every-day use, I&rsquo;m really impressed with the developer
+experience in Neovim with LSP support from Omnisharp. It just works!</p>
+<p>If you have any issues setting this up yourself, feel free to reach out to me!</p>
+
+
+		
+	</div>
+	 
+	<div class="pagination">
+		<a href="/blog/bachelor-students-2021/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+	
+</main>
+
+
+        <hr/>
+<div class="wrapper">
+	<div class="w33">
+		<ul>
+			<li> Bjørn Fjukstad </li>
+			<li> <a href="mailto:bjornfjukstad@gmail.com">bjornfjukstad@gmail.com</a></li> 
+		</ul>
+	</div>
+	<div class="w33 text-center">
+		<ul>
+			<li>
+				Twitter: <a href="https://twitter.com/fjukstad" target="_blank">fjukstad</a>
+			</li> 
+			<li> 
+				Github: <a href="https://github.com/fjukstad" target="_blank">fjukstad</a>
+			</li> 
+		</ul>
+	</div>
+
+	<div class="w33 text-right">
+		<ul>
+			<li>Senior software engineer at DIPS</li>
+		</ul>
+	</div>
+</div>
+
+    </body>
+</html>
