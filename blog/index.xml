@@ -8,7 +8,17 @@
     <language>en-us</language>
     <managingEditor>bjornfjukstad@gmail.com (Bjørn Fjukstad)</managingEditor>
     <webMaster>bjornfjukstad@gmail.com (Bjørn Fjukstad)</webMaster>
-    <lastBuildDate>Wed, 21 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://fjukstad.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://fjukstad.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paternity Leave Side Project</title>
+      <link>http://fjukstad.github.io/blog/paternity-leave/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
+      <author>bjornfjukstad@gmail.com (Bjørn Fjukstad)</author>
+      <guid>http://fjukstad.github.io/blog/paternity-leave/</guid>
+      <description>10 months ago I became a father for the first time! To keep track of how far I pushed my baby boy around in a stroller/jogger during my paternal leave, I created a small web app with tech that was unfamiliar to me. 65 days into my paternity leave I&amp;rsquo;ve covered 503 kilometers, and I&amp;rsquo;ve been out more than 100 hours.
+I usually track my runs/hikes/skiing with my Garmin Fenix 3 watch, which syncs to Strava.</description>
+    </item>
+    
     <item>
       <title>Neovim and .NET</title>
       <link>http://fjukstad.github.io/blog/nvim-and-dotnet/</link>
