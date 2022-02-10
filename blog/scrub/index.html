@@ -146,7 +146,7 @@ Workflow is just a <code>yaml</code> file with the different steps of the build.
 starter workflow these are simply <code>dotnet restore</code> and <code>dotnet build</code>. Below
 is the starter workflow, which I copied from the
 <a href="https://github.com/actions/starter-workflows/blob/master/ci/dotnet-core.yml">starter-workflows repository</a>.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">.NET Core</span><span style="color:#f8f8f8;text-decoration:underline">
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">.NET Core</span><span style="color:#f8f8f8;text-decoration:underline">
 </span><span style="color:#f8f8f8;text-decoration:underline">
 </span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">on</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
 </span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">push</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline">
@@ -185,12 +185,12 @@ in my repository, and named it <code>NUGET_API_KEY</code> which I could use in m
 <h1 id="step-4-update-the-workflow-to-get-it-to-push-to-nugetorg">Step 4: Update the workflow to get it to push to nuget.org</h1>
 <p>To get a .NET Core tool pushed to <a href="https://nuget.org">nuget.org</a> you simply
 need to add a <code>dotnet pack</code> and a <code>dotnet nuget push</code> step to the Workflow:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Pack</span><span style="color:#f8f8f8;text-decoration:underline">
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Pack</span><span style="color:#f8f8f8;text-decoration:underline">
 </span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">run</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">dotnet pack -c Release -o out</span><span style="color:#f8f8f8;text-decoration:underline">
 </span><span style="color:#f8f8f8;text-decoration:underline"></span>- <span style="color:#204a87;font-weight:bold">name</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">Push generated package to GitHub registry</span><span style="color:#f8f8f8;text-decoration:underline">
 </span><span style="color:#f8f8f8;text-decoration:underline">  </span><span style="color:#204a87;font-weight:bold">run</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">dotnet nuget push out/*.nupkg -k ${{ secrets.NUGET_API_KEY }} --skip-duplicate --no-symbols true -s https://api.nuget.org/v3/index.json</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></code></pre></div><p>That&rsquo;s it! It&rsquo;s pushed to <a href="https://www.nuget.org/packages/scrub">nuget.org/packages/scrub</a> and it&rsquo;s possible to download and install it with</p>
-<pre><code>dotnet tool install scrub
+<pre tabindex="0"><code>dotnet tool install scrub
 </code></pre><h1 id="conclusion">Conclusion</h1>
 <p>.NET Core tools are a neat way of developing small platform-independent
 command line tools. If you come from the <a href="https://golang.org">go</a> community, you

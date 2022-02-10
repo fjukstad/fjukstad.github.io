@@ -115,13 +115,13 @@ post on the <a href="https://www.granvillematheson.com/post/self-portrait/">phys
 another example of using data from the Withings API.</p>
 <p>When you have installed the <a href="https://github.com/mathesong/rwithings"><code>rwithings</code></a>
 R package, it is very simple to get the data. First we load the required packages.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">library</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">rwithings</span><span style="color:#000;font-weight:bold">)</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">library</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">rwithings</span><span style="color:#000;font-weight:bold">)</span>
 
 <span style="color:#000">library</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">dplyr</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#000">library</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">ggplot2</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#000">library</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">kableExtra</span><span style="color:#000;font-weight:bold">)</span>
 </code></pre></div><p>Before we can start getting data we need to authenticate with the API.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#000">client_id</span> <span style="color:#ce5c00;font-weight:bold">&lt;-</span> <span style="color:#4e9a06">&#34;asdf1234&#34;</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-R" data-lang="R"><span style="color:#000">client_id</span> <span style="color:#ce5c00;font-weight:bold">&lt;-</span> <span style="color:#4e9a06">&#34;asdf1234&#34;</span>
 <span style="color:#000">client_secret</span> <span style="color:#ce5c00;font-weight:bold">&lt;-</span> <span style="color:#4e9a06">&#34;4321fdsa&#34;</span>
 <span style="color:#000">token</span> <span style="color:#ce5c00;font-weight:bold">&lt;-</span> <span style="color:#000">withings_auth</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">client_id</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">client_secret</span><span style="color:#000;font-weight:bold">)</span>
 </code></pre></div><p>We can then use this token to get a list of ECGs that were collected last week.
@@ -130,7 +130,7 @@ of my watch, just because I&rsquo;m not sure if it&rsquo;s sensitive information
 As a sidenote, I would love if Withings could document their API better with
 regards to the data that comes out. There is no information in the API docs
 about what the data in the different columns actually mean.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">response</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">getheartlist</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">token</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;2020-08-17&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;2020-08-23&#34;</span><span style="color:#000;font-weight:bold">)</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">response</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">getheartlist</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">token</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;2020-08-17&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;2020-08-23&#34;</span><span style="color:#000;font-weight:bold">)</span>
 
 <span style="color:#000">ecgs</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">response</span><span style="color:#ce5c00;font-weight:bold">$</span><span style="color:#000">body</span><span style="color:#ce5c00;font-weight:bold">$</span><span style="color:#000">series</span>
 
@@ -234,7 +234,7 @@ the Withings API provides little information on the output, I do not know what
 <code>Model=91</code> means, but I guess its the ID of the Move ECG watch.</p>
 <p>Further I can get the raw micro-volt measurements from one of the recordings,
 and plot them.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">signalid</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">ecgs[1</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">]</span><span style="color:#ce5c00;font-weight:bold">$</span><span style="color:#000">ecg.signalid</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">signalid</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">ecgs[1</span><span style="color:#000;font-weight:bold">,</span><span style="color:#000">]</span><span style="color:#ce5c00;font-weight:bold">$</span><span style="color:#000">ecg.signalid</span>
 
 <span style="color:#000">ecg</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">getheart</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">token</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">signalid</span><span style="color:#000;font-weight:bold">)</span>
 

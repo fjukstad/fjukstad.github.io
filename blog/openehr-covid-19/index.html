@@ -107,7 +107,7 @@ is of course synthetic.</p>
 <p><img src="figure/dips-arena.jfif" alt="Screenshot of the DIPS Arena Desktop Application. Image taken from the News story."></p>
 <p>Lets see how simple it is for us to get all symptoms registered  on patients in
 our systems. We start with loading the <code>openehR</code> and other necessary packages.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">library</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">openehR</span><span style="color:#000;font-weight:bold">)</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">library</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">openehR</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#000">library</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">kableExtra</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#000">library</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">dplyr</span><span style="color:#000;font-weight:bold">)</span>
 <span style="color:#000">library</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">lubridate</span><span style="color:#000;font-weight:bold">)</span>
@@ -117,7 +117,7 @@ our systems. We start with loading the <code>openehR</code> and other necessary 
 </code></pre></div><p>Then we specify the
 <a href="https://specifications.openehr.org/releases/QUERY/latest/AQL.html">AQL</a> query
 to get the symptoms:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">query</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">query</span> <span style="color:#ce5c00;font-weight:bold">=</span> 
 <span style="color:#4e9a06">&#34;SELECT
 </span><span style="color:#4e9a06">c/context/start_time/value as DateTime,
 </span><span style="color:#4e9a06">o/data[at0001]/events[at0002]/data[at0003]/items[openEHR-EHR-CLUSTER.symptom_sign-cvid.v0 and name/value=&#39;Hoste&#39;]/items[at0.1]/value/value as Cough,
@@ -135,7 +135,7 @@ breath, or has a fever. In this blog post, the data is completely synthetic.
 We can use the <code>openehR</code> package to execute the query. The <code>url</code> is just the
 HTTP REST API endpoint of an openEHR server, e.g.
 <code>http://openehr-server/openehr</code>.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span>  <span style="color:#000">openehR</span><span style="color:#ce5c00;font-weight:bold">::</span><span style="color:#000">query</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">url</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">query</span><span style="color:#000;font-weight:bold">)</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span>  <span style="color:#000">openehR</span><span style="color:#ce5c00;font-weight:bold">::</span><span style="color:#000">query</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">url</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">query</span><span style="color:#000;font-weight:bold">)</span>
 
 <span style="color:#000">kable</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">head</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">data</span><span style="color:#000;font-weight:bold">),</span> <span style="color:#000">format</span><span style="color:#ce5c00;font-weight:bold">=</span><span style="color:#4e9a06">&#34;markdown&#34;</span><span style="color:#000;font-weight:bold">)</span>
 </code></pre></div><table>
@@ -187,7 +187,7 @@ HTTP REST API endpoint of an openEHR server, e.g.
 </tbody>
 </table>
 <p>Since the data is in Norwegian, I&rsquo;ll translate the recorded values:</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">%&gt;%</span> 
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">%&gt;%</span> 
   <span style="color:#000">mutate_all</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">funs</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">str_replace</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">.,</span> <span style="color:#4e9a06">&#34;Tilstede&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;Present&#34;</span><span style="color:#000;font-weight:bold">)))</span> <span style="color:#ce5c00;font-weight:bold">%&gt;%</span> 
   <span style="color:#000">mutate_all</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">funs</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">str_replace</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">.,</span> <span style="color:#4e9a06">&#34;Ukjent&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;Unknown&#34;</span><span style="color:#000;font-weight:bold">)))</span> <span style="color:#ce5c00;font-weight:bold">%&gt;%</span> 
   <span style="color:#000">mutate_all</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">funs</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">str_replace</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">.,</span> <span style="color:#4e9a06">&#34;FravÃ¦rende&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#4e9a06">&#34;Not present&#34;</span><span style="color:#000;font-weight:bold">)))</span> <span style="color:#ce5c00;font-weight:bold">%&gt;%</span> 
@@ -244,7 +244,7 @@ HTTP REST API endpoint of an openEHR server, e.g.
 </tbody>
 </table>
 <p>We can then plot the number of patients screened every week, grouping them on coughing status.</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">%&gt;%</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#000">data</span> <span style="color:#ce5c00;font-weight:bold">%&gt;%</span>
   <span style="color:#000">mutate</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">week</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">isoweek</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">DateTime</span><span style="color:#000;font-weight:bold">))</span> <span style="color:#ce5c00;font-weight:bold">%&gt;%</span> 
   <span style="color:#000">group_by</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">week</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">Cough</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#ce5c00;font-weight:bold">%&gt;%</span> 
   <span style="color:#000">summarize</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">count</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">n</span><span style="color:#000;font-weight:bold">())</span> <span style="color:#ce5c00;font-weight:bold">%&gt;%</span> 
