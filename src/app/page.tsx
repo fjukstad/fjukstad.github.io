@@ -1,10 +1,13 @@
-import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
-        return (
-                <main className="grid min-h-screen grid-cols-3 items-center justify-between p-24">
-                        <div className="">
-                        </div>
-                </main>
-        )
+  return (
+    <>
+      <div className="grid grid-cols-12 w-full ">
+        <div className="col-start-4 col-span-4">
+          <p> Hi, I'm Bjørn 👋 </p>
+        </div>
+      </div >
+    </>
+  )
 }
