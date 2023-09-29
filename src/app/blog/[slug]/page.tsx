@@ -13,6 +13,16 @@ type Post = {
   title: string,
   date: Date,
 }
+//
+// Return a list of `params` to populate the [slug] dynamic segment
+export async function generateStaticParams() {
+  const rootDirectory = path.join(process.cwd(), "/content");
+  const files = await fs.readdir(rootDirectory);
+
+  return files.map((file) => ({
+    slug: file.replace(".md", ""),
+  }))
+}
 
 async function getPost(slug: string) {
   const content = await fs.readFile(path.join(process.cwd(), `/content/${slug}.md`));
@@ -40,7 +50,6 @@ async function getPost(slug: string) {
 
 export default async function Blog({ params }: { params: { slug: string } }) {
   let post = await getPost(params.slug);
-  console.log(post);
   return (
     <div>
       <h1 className="text-2xl pb-2">{post.title}</h1>
