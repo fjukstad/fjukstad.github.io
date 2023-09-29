@@ -3,11 +3,10 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <>
-      <div className="grid grid-cols-12 w-full ">
-        <div className="col-start-4 col-span-4">
-          <p> Hi, I'm Bjørn 👋 </p>
-        </div>
-      </div >
+      <p className="pb-4"> Hi, I'm Bjørn 👋 </p>
+      <p> I'm a product manager at <Link href="http://dips.com">DIPS</Link>,
+        currently buidling our developer platform to enable anyone
+        to build great systems for Norwegian hospitals.</p>
     </>
   )
 }
