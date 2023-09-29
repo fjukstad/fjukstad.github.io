@@ -6,7 +6,6 @@ import remarkFrontmatter from 'remark-frontmatter';
 import remarkGfm from 'remark-gfm';
 import remarkRehype from 'remark-rehype';
 import { unified } from 'unified';
-import handleFrontmatter from '@/lib/handleFrontmatter';
 import matter from 'gray-matter';
 
 type Post = {
@@ -23,7 +22,6 @@ async function getPost(slug: string) {
   const processedContent = await unified()
     .use(remarkParse)
     .use(remarkFrontmatter)
-    .use(handleFrontmatter)
     .use(remarkGfm)
     .use(remarkRehype)
     .use(rehypeStringify)
