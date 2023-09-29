@@ -14,13 +14,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex bg-white dark:bg-gray-950 text-gray-90 dark:text-white h-screen font-sans" >
+      <body className="flex bg-white dark:bg-[#171616] text-gray-90 dark:text-white h-screen font-sans" >
         <main className="grid grid-flow-ros auto-rows-max w-full flex py-12 ">
           <div className="grid grid-cols-12 w-full h-12">
             <div className="col-start-4 col-span-4 md:col-span-3 md:col-start-4">
               <div className="grid grid-cols-3 gap-2 min-w-1/2">
-                <Link href="/">Home</Link>
-                <Link href="/blog">Blog</Link>
+                <Link href="/">home</Link>
+                <Link href="/blog">blog</Link>
               </div>
             </div>
           </div>

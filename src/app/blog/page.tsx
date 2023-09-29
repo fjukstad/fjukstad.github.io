@@ -20,19 +20,29 @@ async function getPosts() {
     posts.push(post);
   }
 
+  // sort posts by date
+  posts.sort((a, b) => {
+    if (a.data.date < b.data.date) {
+      return 1;
+    } else {
+      return -1;
+    }
+  });
+
   return posts;
 
 }
 export default async function Blog() {
   let posts = await getPosts();
-  console.log(posts);
   return (
     <>
       <div>
         {posts.map((post) => {
-          return <div key={post.content}>
-            <Link href={`/blog/${post.slug}`}>{String(post.data.title)}</Link>
-            {post.data.date}
+          return <div key={post.content} className="py-2">
+            <Link className="text-lg" href={`/blog/${post.slug}`}>{String(post.data.title)}</Link>
+            <div className="text-gray-500">
+              {post.data.date.toDateString()}
+            </div>
           </div>;
         })}
       </div>
