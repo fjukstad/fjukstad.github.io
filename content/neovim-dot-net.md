@@ -4,7 +4,7 @@ date: 2021-07-21
 author: Bjørn Fjukstad
 ---
 
-[![screenshot of nvim](/blog/images/nvim.png)](/blog/images/nvim.png)
+[![screenshot of nvim](/images/nvim.png)](/images/nvim.png)
 
 Just before I went on summer vacation, I spent the last week writing .NET
 code in [Neovim](https://neovim.io/). In the
