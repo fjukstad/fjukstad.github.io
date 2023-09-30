@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <>
+    <div className="text-gray-600 dark:text-gray-300">
       <p className="pb-4"> Hi, I&apos;m Bjørn 👋 </p>
-      <p> I&apos;m a product manager at <Link href="http://dips.com">DIPS</Link>,
-        currently buidling our developer platform to enable anyone
-        to build great systems for Norwegian hospitals.</p>
+      <p className=""> I&apos;m a product manager at <Link className="font-bold" href="https://www.dips.com">DIPS</Link>,
+        currently buidling our developer platform to enablea everyone
+        to collaborate on the future of Norwegian health care.</p>
 
       <div className="grid grid-cols-3 gap-4 min-w-1/2 py-6 items-start">
         <div className="flex flex-col">
@@ -27,8 +27,9 @@ export default function Home() {
           <li><Link href="https://twitter.com/fjukstad">twitter</Link></li>
           <li><Link href="https://www.linkedin.com/in/bjornfjukstad/">linkedin</Link></li>
           <li><Link href="https://www.github.com/fjukstad/">github</Link></li>
+          <li><Link href="mailto:bjornfjukstad@gmail.com">bjornfjukstad@gmail.com</Link></li>
         </ul>
       </div>
-    </>
+    </div>
   )
 }
