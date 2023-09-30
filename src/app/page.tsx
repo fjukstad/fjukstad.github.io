@@ -23,11 +23,11 @@ export default function Home() {
       </div>
 
       <div className="py-12">
-        <ul className="flex space-x-4">
-          <li><Link href="https://twitter.com/fjukstad">twitter</Link></li>
-          <li><Link href="https://www.linkedin.com/in/bjornfjukstad/">linkedin</Link></li>
-          <li><Link href="https://www.github.com/fjukstad/">github</Link></li>
-          <li><Link href="mailto:bjornfjukstad@gmail.com">bjornfjukstad@gmail.com</Link></li>
+        <ul className="flex flex-wrap -ml-4">
+          <li className="ml-4"><Link href="https://twitter.com/fjukstad">twitter</Link></li>
+          <li className="ml-4"><Link href="https://www.linkedin.com/in/bjornfjukstad/">linkedin</Link></li>
+          <li className="ml-4"><Link href="https://www.github.com/fjukstad/">github</Link></li>
+          <li className="ml-4"><Link href="mailto:bjornfjukstad@gmail.com">bjornfjukstad@gmail.com</Link></li>
         </ul>
       </div>
     </div>
