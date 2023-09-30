@@ -15,11 +15,18 @@ export default function Home() {
         </div>
         <div className="flex flex-col gap-2">
           <Image className="rounded-lg h-auto" src="/images/bjorn-stage-3.jpg" width="500" height="500" alt="image of me on stage" />
-          <Image className="rounded-lg h-auto" src="/images/bjorn-and-the-gang.jpg" width="500" height="500" alt="image of me on stage" />
+          <Image className="rounded-lg h-auto" src="/images/bjorn-and-the-gang.jpg" width="500" height="500" alt="image of me and hanne and sverre" />
         </div>
         <div className="flex flex-col">
           <Image className="rounded-lg h-auto" src="/images/bjorn-stage-1.jpg" width="500" height="500" alt="image of me on stage" />
         </div>
+      </div>
+
+      <div className="py-12">
+        <ul className="flex space-x-4">
+          <li><Link href="https://twitter.com/fjukstad">twitter</Link></li>
+          <li><Link href="https://www.linkedin.com/in/bjornfjukstad/">linkedin</Link></li>
+        </ul>
       </div>
     </>
   )
