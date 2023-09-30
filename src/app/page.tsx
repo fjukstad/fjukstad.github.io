@@ -26,6 +26,7 @@ export default function Home() {
         <ul className="flex space-x-4">
           <li><Link href="https://twitter.com/fjukstad">twitter</Link></li>
           <li><Link href="https://www.linkedin.com/in/bjornfjukstad/">linkedin</Link></li>
+          <li><Link href="https://www.github.com/fjukstad/">github</Link></li>
         </ul>
       </div>
     </>
