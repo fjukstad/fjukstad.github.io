@@ -6,7 +6,7 @@ export default function Home() {
     <div className="text-gray-600 dark:text-gray-300">
       <p className="pb-4"> Hi, I&apos;m Bjørn 👋 </p>
       <p className=""> I&apos;m a product manager at <Link className="font-bold" href="https://www.dips.com">DIPS</Link>,
-        currently buidling our developer platform to enablea everyone
+        currently buidling our developer platform to enable everyone
         to collaborate on the future of Norwegian health care.</p>
 
       <div className="grid grid-cols-3 gap-4 min-w-1/2 py-6 items-start">
