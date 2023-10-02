@@ -1,10 +1,14 @@
 import './globals.css'
-import type { Metadata } from 'next'
 import Link from 'next/link'
 
+import type { Metadata } from 'next'
+
 export const metadata: Metadata = {
-  title: 'Bjørn Fjukstad',
-  description: 'My personal website',
+  title: {
+    default: 'Bjørn Fjukstad',
+    template: '%s | Bjørn Fjukstad',
+  },
+  description: "I'm a product manager at DIPS, currently buidling our developer platform to enable everyone to collaborate on the future of Norwegian health care.",
 }
 
 export default function RootLayout({

@@ -7,6 +7,8 @@ import remarkGfm from 'remark-gfm';
 import remarkRehype from 'remark-rehype';
 import { unified } from 'unified';
 import matter from 'gray-matter';
+import type { Metadata } from 'next'
+
 
 type Post = {
   contentHtml: string,
@@ -57,4 +59,11 @@ export default async function Blog({ params }: { params: { slug: string } }) {
       <article className="prose dark:prose-invert text-gray-900 dark:text-white" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
     </div>
   )
+}
+
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  let post = await getPost(params.slug);
+  return {
+    title: post.title,
+  }
 }

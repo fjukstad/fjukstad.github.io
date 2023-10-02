@@ -2,6 +2,11 @@ import fs from 'node:fs/promises'
 import path from 'path'
 import matter, { GrayMatterFile } from 'gray-matter';
 import Link from 'next/link'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: "Blog",
+}
 
 interface Posts extends GrayMatterFile<Buffer> {
   slug: string;
