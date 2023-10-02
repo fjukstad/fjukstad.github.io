@@ -22,7 +22,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-12">
+      <p className="py-4"> I have a background in Computer Science with a PhD from the
+        <Link className="font-bold" target="_blank" href="https://uit-hdl.github.io/"> Health Data Lab </Link>
+        at the Arctic University of Norway in Tromsø.
+
+      </p>
+
+      <div className="py-6">
         <ul className="flex flex-wrap -ml-4">
           <li className="ml-4"><Link target="_blank" href="https://twitter.com/fjukstad">twitter</Link></li>
           <li className="ml-4"><Link target="_blank" href="https://www.linkedin.com/in/bjornfjukstad/">linkedin</Link></li>
@@ -30,6 +36,8 @@ export default function Home() {
           <li className="ml-4"><Link target="_blank" href="mailto:bjornfjukstad@gmail.com">bjornfjukstad@gmail.com</Link></li>
         </ul>
       </div>
-    </div>
+
+
+    </div >
   )
 }
