@@ -1,7 +1,3 @@
 # Personal page
 
-Written with Next.js. Add blogposts to `content/` and run the page locally with
-
-```
-npm run dev
-```
+About me and a place to put words for others to read.

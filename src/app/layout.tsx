@@ -3,12 +3,29 @@ import Link from 'next/link'
 
 import type { Metadata } from 'next'
 
+
+
 export const metadata: Metadata = {
   title: {
     default: 'Bjørn Fjukstad',
     template: '%s | Bjørn Fjukstad',
   },
   description: "I'm a product manager at DIPS, currently buidling our developer platform to enable everyone to collaborate on the future of Norwegian health care.",
+  openGraph: {
+    title: 'Bjørn Fjukstad',
+    description: "I'm a product manager at DIPS, currently buidling our developer platform to enable everyone to collaborate on the future of Norwegian health care.",
+    url: 'https://fjukstad.github.io',
+    siteName: 'Bjørn Fjukstad',
+    images: [
+      {
+        url: 'https://fjukstad.github.io/images/bjorn-stage-1.jpg',
+        width: 600,
+        height: 800,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
