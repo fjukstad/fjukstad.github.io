@@ -15,9 +15,7 @@ export const metadata: Metadata = {
     siteName: 'Bjørn Fjukstad',
     images: [
       {
-        url: 'https://fjukstad.github.io/images/bjorn-stage-1.jpg',
-        width: 600,
-        height: 800,
+        url: 'https://fjukstad.github.io/images/bjorn-stage-3.jpg',
       },
     ],
     locale: 'en_US',
