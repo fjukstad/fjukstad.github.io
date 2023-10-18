@@ -34,7 +34,7 @@ export default function RootLayout({
         <main className="mx-auto flex flex-col items-center py-12 w-full md:max-w-screen-xl ">
           <div className="grid grid-cols-12 w-full h-12">
             <div className="col-start-2 col-span-10 md:col-span-3 md:col-start-4">
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 font-light">
                 <Link href="/">home</Link>
                 <Link href="/blog">blog</Link>
               </div>

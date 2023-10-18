@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="text-gray-600 dark:text-gray-300">
-      <p className="pb-4"> Hi, I&apos;m Bjørn 👋 </p>
+    <div className="text-gray-600 dark:text-gray-300 font-light">
+      <p className="pb-4 font-bold"> Hey, I&apos;m Bjørn! </p>
       <p className=""> I&apos;m a product manager at <Link className="font-bold" href="https://www.dips.com" target="_blank">DIPS</Link>,
         currently buidling our developer platform to enable everyone
         to collaborate on the future of Norwegian health care.</p>

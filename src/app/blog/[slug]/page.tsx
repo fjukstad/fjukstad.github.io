@@ -56,7 +56,7 @@ export default async function Blog({ params }: { params: { slug: string } }) {
     <div>
       <h1 className="text-2xl pb-2">{post.title}</h1>
       <div className="text-gray-500 pb-2">{post.date.toDateString()}</div>
-      <article className="prose dark:prose-invert text-gray-900 dark:text-white" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+      <article className="prose dark:prose-invert text-gray-900 dark:text-white font-light" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
     </div>
   )
 }
